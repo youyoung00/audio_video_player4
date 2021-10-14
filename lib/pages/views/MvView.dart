@@ -51,8 +51,8 @@ class _MvViewState extends State<MvView> {
               Stack(
                 children: [
                   GestureDetector(
-                    onTap: (){
-                      Navigator.of(context).push(
+                    onTap: () async{
+                      await Navigator.of(context).push(
                         MaterialPageRoute(
                           builder: (BuildContext context) => MvDetailPage(
                             videoDatas: this.videoDatas,
@@ -60,6 +60,8 @@ class _MvViewState extends State<MvView> {
                           )
                         )
                       );
+                      setState(() {});
+                      print("push");
                     },
                     child: Container(
                       height: MediaQuery.of(context).size.width/1.8,

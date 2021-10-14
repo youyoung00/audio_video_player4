@@ -16,13 +16,15 @@ class _MvDetailPageState extends State<MvDetailPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(),
       body: ListView.builder(
           itemCount: this.widget.videoDatas.length,
-          itemBuilder: (BuildContext context, int index) => Views(
-            favorite: this.widget.videoDatas[index]['favorite'],
-            thumbnail: this.widget.videoDatas[index]['thumbnail'].toString(),
-            url: this.widget.videoDatas[index]['url'].toString(),
-            check: this.widget.videoDatas[index]['check'],
+          itemBuilder: (BuildContext context, int index) =>
+              Views( mvDataIndex: this.widget.videoDatas[index],
+            // favorite: this.widget.videoDatas[index]['favorite'],
+            // thumbnail: this.widget.videoDatas[index]['thumbnail'].toString(),
+            // url: this.widget.videoDatas[index]['url'].toString(),
+            // check: this.widget.videoDatas[index]['check'],
             onPressed: (VideoPlayerController ct) async{
               if(this.widget.prevClickIndex != null) this.widget.videoDatas[this.widget.prevClickIndex]['check'] = true;
               ct.value.isPlaying ? await ct.pause() : await ct.play();
@@ -40,12 +42,14 @@ class _MvDetailPageState extends State<MvDetailPage> {
 
 class Views extends StatefulWidget {
 
-  final String url;
-  final String thumbnail;
-  bool check;
-  bool favorite;
+  Map<String,dynamic> mvDataIndex;
+
+  // final String url;
+  // final String thumbnail;
+  // bool check;
+  // bool favorite;
   Future<void> Function(VideoPlayerController ct) onPressed;
-  Views({Key? key, required this.favorite, required this.url, required this.check, required this.thumbnail, required this.onPressed}) : super(key: key);
+  Views({Key? key, required this.mvDataIndex, required this.onPressed}) : super(key: key);
 
   @override
   _ViewsState createState() => _ViewsState();
@@ -59,7 +63,7 @@ class _ViewsState extends State<Views> {
   void initState() {
     super.initState();
     Future.microtask(() async {
-      _controller = VideoPlayerController.asset(widget.url)..initialize();
+      _controller = VideoPlayerController.asset(this.widget.mvDataIndex["url"])..initialize();
       _controller?.addListener(() {
         if(this._controller!.value.isInitialized) {
           if (!this.mounted) return;
@@ -77,7 +81,7 @@ class _ViewsState extends State<Views> {
 
   @override
   Widget build(BuildContext context) {
-    if (widget.check) {
+    if (widget.mvDataIndex['check']) {
       if (_controller != null) {
         _controller!.pause();
       }
@@ -100,7 +104,7 @@ class _ViewsState extends State<Views> {
                     child: Container(
                         decoration: BoxDecoration(
                             image: DecorationImage(
-                                image: NetworkImage(widget.thumbnail),
+                                image: NetworkImage(widget.mvDataIndex['thumbnail']),
                                 fit: BoxFit.cover
                             )
                         ),
@@ -171,12 +175,12 @@ class _ViewsState extends State<Views> {
                     alignment: Alignment.bottomRight,
                     child: IconButton(
                       icon: Icon(
-                        this.widget.favorite ? Icons.favorite_rounded : Icons.favorite_border_rounded,
+                        this.widget.mvDataIndex['favorite'] ? Icons.favorite_rounded : Icons.favorite_border_rounded,
                         color: Colors.deepOrange,
                       ),
                       onPressed: (){
                         setState((){
-                          this.widget.favorite = !this.widget.favorite;
+                          this.widget.mvDataIndex['favorite'] = !this.widget.mvDataIndex['favorite'];
                         });
                       },
                     ),
@@ -206,5 +210,7 @@ class _ViewsState extends State<Views> {
         onPressed: () async => await widget.onPressed(this._controller!)
     ),
   );
+
+
 }
 

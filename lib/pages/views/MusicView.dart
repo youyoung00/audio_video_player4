@@ -18,7 +18,7 @@ class _MusicViewState extends State<MusicView> {
       "title":"THE WATER CURE",
       "text":"Martin Hyatt",
       "img": "images/pic-1.png",
-      "audio": "mp3/byoyomi_20_4.mp3"
+      "audio": "https://firebasestorage.googleapis.com/v0/b/testsnslogin-13c83.appspot.com/o/byoyomi_20_4.mp3?alt=media&token=04b443f0-2f57-4d4c-a03f-9ce938370bfc"
     },
     {
       'favorite': false,
@@ -26,7 +26,7 @@ class _MusicViewState extends State<MusicView> {
       "title":"PEACE LIFE",
       "text":"Hazard Bin",
       "img": "images/pic-2.png",
-      "audio": "mp3/byoyomi_20_4.mp3"
+      "audio": "https://firebasestorage.googleapis.com/v0/b/testsnslogin-13c83.appspot.com/o/byoyomi_20_4.mp3?alt=media&token=04b443f0-2f57-4d4c-a03f-9ce938370bfc"
     },
     {
       'favorite': false,
@@ -34,7 +34,7 @@ class _MusicViewState extends State<MusicView> {
       "title":"Day Remember",
       "text":"Nicholos",
       "img": "images/pic-3.png",
-      "audio": "mp3/byoyomi_20_4.mp3"
+      "audio": "https://firebasestorage.googleapis.com/v0/b/testsnslogin-13c83.appspot.com/o/byoyomi_20_4.mp3?alt=media&token=04b443f0-2f57-4d4c-a03f-9ce938370bfc"
     },
     {
       'favorite': false,
@@ -42,7 +42,7 @@ class _MusicViewState extends State<MusicView> {
       "title":"France",
       "text":"Paris",
       "img": "images/pic-3.png",
-      "audio": "mp3/byoyomi_20_4.mp3"
+      "audio": "https://firebasestorage.googleapis.com/v0/b/testsnslogin-13c83.appspot.com/o/byoyomi_20_4.mp3?alt=media&token=04b443f0-2f57-4d4c-a03f-9ce938370bfc"
     },
     {
       'favorite': false,
@@ -50,7 +50,7 @@ class _MusicViewState extends State<MusicView> {
       "title":"Germany",
       "text":"Berlin",
       "img": "images/pic-5.png",
-      "audio": "mp3/byoyomi_20_4.mp3"
+      "audio": "https://firebasestorage.googleapis.com/v0/b/testsnslogin-13c83.appspot.com/o/byoyomi_20_4.mp3?alt=media&token=04b443f0-2f57-4d4c-a03f-9ce938370bfc"
     },
     {
       'favorite': false,
