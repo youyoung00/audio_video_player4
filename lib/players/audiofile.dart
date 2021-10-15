@@ -57,7 +57,7 @@ class _AudioFileState extends State<AudioFile> {
   Widget btnStart(){
     return IconButton(
       padding: const EdgeInsets.only(bottom: 10),
-      icon: isPlaying == false ? Icon(_icons[0], size: 50, color: Colors.blue,) : Icon(_icons[1], size: 50,color: Colors.blue,),
+      icon: isPlaying == false ? Icon(_icons[0], size: 50, color: Colors.deepPurpleAccent,) : Icon(_icons[1], size: 50,color: Colors.blue,),
       onPressed: (){
         if(isPlaying == false){
           this.widget.advancedPlayer?.play(this.widget.audioPath, isLocal: true);

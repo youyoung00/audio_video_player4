@@ -40,7 +40,7 @@ class _MusicDetailPageState extends State<MusicDetailPage> {
               right: 0,
               height: screenHeight/3,
               child: Container(
-                color: Colors.blueAccent,
+                color: Colors.deepPurpleAccent,
               )
           ),
           Positioned(

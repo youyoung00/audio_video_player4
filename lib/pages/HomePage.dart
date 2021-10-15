@@ -1,4 +1,3 @@
-
 import 'package:audio_video_player3/pages/views/MusicView.dart';
 import 'package:audio_video_player3/pages/views/MvView.dart';
 import 'package:audio_video_player3/pages/views/ThankToView.dart';
@@ -31,7 +30,7 @@ class _HomePageState extends State<HomePage> {
       'color': Colors.redAccent,
     },
     {
-      'txt': 'Thank To',
+      'txt': 'ThankTo',
       'color': Colors.amberAccent,
     },
   ];
@@ -154,6 +153,7 @@ class _HomePageState extends State<HomePage> {
             onPressed: (){
               if(!this._musicPageController.hasClients) return;
               this._musicPageController.jumpToPage(this._centerButtonItem.indexOf(item));
+              setState(() {});
             },
             style: ButtonStyle(
               shape: MaterialStateProperty.all<OutlinedBorder>(

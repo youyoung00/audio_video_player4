@@ -16,7 +16,11 @@ class _MvDetailPageState extends State<MvDetailPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(
+        actions: [
+
+        ],
+      ),
       body: ListView.builder(
           itemCount: this.widget.videoDatas.length,
           itemBuilder: (BuildContext context, int index) =>
