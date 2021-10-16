@@ -14,26 +14,38 @@ class _MvViewState extends State<MvView> {
   List<Map<String, dynamic>> videoDatas = [
 
     {
+      'videoTitle' : 'LILAC(라일락)',
+      'company' : "토끼콩(Kylie Won's Music)",
+      'companyImg':'https://yt3.ggpht.com/ytc/AKedOLR397UeSrsrLTsIMj_4N-3X9tsc5_kHXiHKUCew=s48-c-k-c0x00ffffff-no-rj',
+      'viewCount' : '조회수',
       'thumbnail' : 'https://cdn.pixabay.com/photo/2017/01/18/17/14/girl-1990347__340.jpg',
       'url' : 'https://firebasestorage.googleapis.com/v0/b/testsnslogin-13c83.appspot.com/o/%5BMV%5D%20IU(%E1%84%8B%E1%85%A1%E1%84%8B%E1%85%B5%E1%84%8B%E1%85%B2)_LILAC(%E1%84%85%E1%85%A1%E1%84%8B%E1%85%B5%E1%86%AF%E1%84%85%E1%85%A1%E1%86%A8).mp4?alt=media&token=41e01c03-e376-49e0-b538-490443c5fc23',
       'check' : false,
       'favorite' : false,
     },
     {
+      'videoTitle' : 'BBIBBI(삐삐)',
+      'company' : "토끼콩(Kylie Won's Music)",
+      'companyImg':'https://yt3.ggpht.com/ytc/AKedOLR397UeSrsrLTsIMj_4N-3X9tsc5_kHXiHKUCew=s48-c-k-c0x00ffffff-no-rj',
+      'viewCount' : '조회수',
       'thumbnail' : 'https://cdn.pixabay.com/photo/2017/11/02/20/31/guitars-2912447__480.jpg',
-      'url' : 'https://firebasestorage.googleapis.com/v0/b/testsnslogin-13c83.appspot.com/o/%5BMV%5D%20IU(%E1%84%8B%E1%85%A1%E1%84%8B%E1%85%B5%E1%84%8B%E1%85%B2)_LILAC(%E1%84%85%E1%85%A1%E1%84%8B%E1%85%B5%E1%86%AF%E1%84%85%E1%85%A1%E1%86%A8).mp4?alt=media&token=41e01c03-e376-49e0-b538-490443c5fc23',
+      'url' : 'https://firebasestorage.googleapis.com/v0/b/testsnslogin-13c83.appspot.com/o/%5BMV%5D%20IU(%E1%84%8B%E1%85%A1%E1%84%8B%E1%85%B5%E1%84%8B%E1%85%B2)%20_%20BBIBBI(%E1%84%88%E1%85%B5%E1%84%88%E1%85%B5).mp4?alt=media&token=984c83c6-23e3-41da-be23-7ccbe14b2e5d',
       'check' : false,
       'favorite' : false,
     },
     {
+      'videoTitle' : 'Anne-Marie 2002 커버',
+      'company' : "토끼콩(Kylie Won's Music)",
+      'companyImg':'https://yt3.ggpht.com/ytc/AKedOLR397UeSrsrLTsIMj_4N-3X9tsc5_kHXiHKUCew=s48-c-k-c0x00ffffff-no-rj',
+      'viewCount' : '조회수',
       'thumbnail' : 'https://cdn.pixabay.com/photo/2016/01/14/06/09/woman-1139397__480.jpg',
-      'url' : 'https://firebasestorage.googleapis.com/v0/b/testsnslogin-13c83.appspot.com/o/%5BMV%5D%20IU(%E1%84%8B%E1%85%A1%E1%84%8B%E1%85%B5%E1%84%8B%E1%85%B2)_LILAC(%E1%84%85%E1%85%A1%E1%84%8B%E1%85%B5%E1%86%AF%E1%84%85%E1%85%A1%E1%86%A8).mp4?alt=media&token=41e01c03-e376-49e0-b538-490443c5fc23',
+      'url' : 'https://firebasestorage.googleapis.com/v0/b/testsnslogin-13c83.appspot.com/o/2002%20cover%20by%20%E1%84%90%E1%85%A9%E1%84%81%E1%85%B5%E1%84%8F%E1%85%A9%E1%86%BC.mp4?alt=media&token=2dbb1fd9-5a74-4247-8991-54db298dd05b',
       'check': false,
       'favorite' : false,
     },
   ];
 
-  String mvTitle = "Video";
+  String mvTitle = "뮤직비디오";
 
   int? prevClickIndex;
 
@@ -88,22 +100,23 @@ class _MvViewState extends State<MvView> {
                 ],
               ),
               Container(
-                margin: EdgeInsets.only(top: 10,left: 10,right: 10,bottom: 22),
+                margin: EdgeInsets.only(top: 10,left: 10,right: 10,bottom: 24),
                 //color: Colors.blue,
                 //height: 100,
                 child: Row(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Container(
+                      margin: EdgeInsets.only(top: 4.0),
                       height: 40,
                       width: 40,
                       decoration: BoxDecoration(
-                        color: Colors.red,
-                        borderRadius: BorderRadius.circular(40),
-                        image: DecorationImage(
-                          fit: BoxFit.cover,
-                          image: NetworkImage("https://cdn.pixabay.com/photo/2021/05/10/14/15/corset-6243486__340.jpg")
-                        )
+                          color: Colors.red,
+                          borderRadius: BorderRadius.circular(40),
+                          image: DecorationImage(
+                              fit: BoxFit.cover,
+                              image: NetworkImage(this.videoDatas[i]["companyImg"].toString())
+                          )
                       ),
                     ),
                     Container(
@@ -112,21 +125,25 @@ class _MvViewState extends State<MvView> {
                       child: Column(
                         children: [
                           Container(
-                            margin: EdgeInsets.only(bottom: 4.0),
-                            child: Text(
-                              "TITLE",
-                              style: TextStyle(
-                                color: Colors.black87,
-                                fontSize: 16,
-                                //fontWeight: FontWeight.bold,
-                              ),
-                            )
+                              width: MediaQuery.of(context).size.width/2,
+                              //color: Colors.red,
+                              margin: EdgeInsets.only(bottom: 4.0),
+                              child: Text(
+                                this.videoDatas[i]["videoTitle"].toString(),
+                                style: TextStyle(
+                                  color: Colors.black87,
+                                  fontSize: 16,
+                                  //fontWeight: FontWeight.bold,
+                                ),
+                              )
                           ),
                           Container(
+                            width: MediaQuery.of(context).size.width/2,
+                            //color: Colors.blue,
                             child: Text(
-                              "subTxt",
+                              this.videoDatas[i]["company"].toString(),
                               style: TextStyle(
-                                color: Colors.grey.shade600
+                                  color: Colors.grey.shade600
                               ),
                             ),
                           ),

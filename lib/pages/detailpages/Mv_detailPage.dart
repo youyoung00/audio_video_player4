@@ -135,13 +135,14 @@ class _ViewsState extends State<Views> {
             ],
           ),
           Container(
-            margin: EdgeInsets.only(top: 10,left: 10,right: 10,bottom: 22),
+            margin: EdgeInsets.only(top: 10,left: 10,right: 10,bottom: 24),
             //color: Colors.blue,
             //height: 100,
             child: Row(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Container(
+                  margin: EdgeInsets.only(top: 4.0),
                   height: 40,
                   width: 40,
                   decoration: BoxDecoration(
@@ -149,7 +150,7 @@ class _ViewsState extends State<Views> {
                       borderRadius: BorderRadius.circular(40),
                       image: DecorationImage(
                           fit: BoxFit.cover,
-                          image: NetworkImage("https://cdn.pixabay.com/photo/2021/05/10/14/15/corset-6243486__340.jpg")
+                          image: NetworkImage(this.widget.mvDataIndex["companyImg"].toString())
                       )
                   ),
                 ),
@@ -159,9 +160,11 @@ class _ViewsState extends State<Views> {
                   child: Column(
                     children: [
                       Container(
+                        width: MediaQuery.of(context).size.width/2,
+                        //color: Colors.red,
                           margin: EdgeInsets.only(bottom: 4.0),
                           child: Text(
-                            "TITLE",
+                            this.widget.mvDataIndex["videoTitle"].toString(),
                             style: TextStyle(
                               color: Colors.black87,
                               fontSize: 16,
@@ -170,8 +173,10 @@ class _ViewsState extends State<Views> {
                           )
                       ),
                       Container(
+                        width: MediaQuery.of(context).size.width/2,
+                        //color: Colors.blue,
                         child: Text(
-                          "subTxt",
+                          this.widget.mvDataIndex["company"].toString(),
                           style: TextStyle(
                               color: Colors.grey.shade600
                           ),
@@ -221,7 +226,5 @@ class _ViewsState extends State<Views> {
         onPressed: () async => await widget.onPressed(this._controller!)
     ),
   );
-
-
 }
 

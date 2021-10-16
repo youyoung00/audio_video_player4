@@ -15,8 +15,8 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
 
   final List<String> _topImgs = [
+    "images/iu_main_img.jpeg",
     "images/iu_top4.jpeg",
-    "images/iu_top1.jpeg",
     "images/iu_top2.jpeg",
     "images/iu_top3.jpeg",
   ];
@@ -119,7 +119,7 @@ class _HomePageState extends State<HomePage> {
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(15),
                             image: DecorationImage(
-                              fit: BoxFit.fill,
+                              fit: BoxFit.cover,
                               image: AssetImage(this._topImgs[i].toString())
                             )
                           ),
