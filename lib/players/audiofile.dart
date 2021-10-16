@@ -39,7 +39,7 @@ class _AudioFileState extends State<AudioFile> {
       _position=p;
     });});
 
-    this.widget.advancedPlayer?.setUrl(this.widget.audioPath, isLocal: true);
+    this.widget.advancedPlayer?.setUrl(this.widget.audioPath);
     this.widget.advancedPlayer?.onPlayerCompletion.listen((event) {
       if(!mounted) return; // 리스너에는 마운티드 사용....
       setState(() {

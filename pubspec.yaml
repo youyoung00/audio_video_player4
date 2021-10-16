@@ -63,10 +63,17 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
-    - assets/mp3/byoyomi_20_4.mp3
+    - images/pic-9.png
+    - images/pic-8.png
+    - images/pic-7.png
+    - images/pic-6.png
     - videos/AntiguaArchTL.mp4
     - videos/FogTL.mp4
     - videos/realshort.mp4
+    - images/iu_top2.jpeg
+    - images/iu_top3.jpeg
+    - images/iu_top4.jpeg
+    - images/iu_top1.jpeg
     - images/iu10.jpeg
     - images/iu9.jpeg
     - images/iu8.jpeg

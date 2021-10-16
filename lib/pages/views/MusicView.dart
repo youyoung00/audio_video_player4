@@ -18,7 +18,69 @@ class _MusicViewState extends State<MusicView> {
       "title": "라일락",
       "singer":"아이유(IU)",
       "img": "images/iu1.jpeg",
-      "audio": "https://firebasestorage.googleapis.com/v0/b/testsnslogin-13c83.appspot.com/o/byoyomi_20_4.mp3?alt=media&token=04b443f0-2f57-4d4c-a03f-9ce938370bfc"
+      "audio": "https://firebasestorage.googleapis.com/v0/b/testsnslogin-13c83.appspot.com/o/%E1%84%92%E1%85%A9%E1%84%85%E1%85%A1%E1%86%BC%E1%84%89%E1%85%AE%E1%84%8B%E1%85%AF%E1%86%AF%E1%84%80%E1%85%A1%20cover%20by%20%E1%84%90%E1%85%A9%E1%84%81%E1%85%B5%E1%84%8F%E1%85%A9%E1%86%BC.mp3?alt=media&token=e0ee8135-3deb-46ea-bd22-1b2c17fd15e0",
+      "lyrics": """
+나리는 꽃가루에 눈이 따끔해 (아야)
+눈물이 고여도 꾹 참을래
+내 마음 한켠 비밀스런 오르골에 넣어두고서
+영원히 되감을 순간이니까
+
+우리 둘의 마지막 페이지를 잘 부탁해
+어느 작별이 이보다 완벽할까?
+Love me only 'til this spring
+
+오, 라일락, 꽃이 지는 날 goodbye
+이런 결말이 어울려, 안녕 꽃잎 같은 안녕
+하이얀 우리 봄날의 climax
+아, 얼마나 기쁜 일이야
+
+우우우우, 우우우우
+Love me only 'til this spring 봄바람처럼
+우우우우, 우우우우
+Love me only 'til this spring 봄바람처럼
+
+기분이 달아 콧노래 부르네 (랄라)
+입꼬리는 살짝 올린 채
+어쩜 이렇게 하늘은 더 바람은 또 완벽한 건지
+오늘따라 내 모습 맘에 들어
+
+처음 만난 그날처럼 예쁘다고 말해줄래
+어느 이별이 이토록 달콤할까?
+Love resembles misty dream
+
+오, 라일락, 꽃이 지는 날 goodbye
+이런 결말이 어울려, 안녕 꽃잎 같은 안녕
+하이얀 우리 봄날의 climax
+아, 얼마나 기쁜 일이야
+
+우우우우, 우우우우
+Love resembles misty dream 뜬구름처럼
+우우우우, 우우우우
+Love resembles misty dream 뜬구름처럼
+
+너도 언젠가 날 잊게 될까?
+지금 표정과 오늘의 향기도?
+단잠 사이에 스쳐간 봄날의 꿈처럼
+
+오, 라일락, 꽃이 지는 날 goodbye
+너의 대답이 날 울려, 안녕 약속 같은 안녕
+하이얀 우리 봄날에 climax
+아, 얼마나 기쁜 일이야
+
+우우우우, 우우우우
+Love me only 'til this spring 봄바람처럼
+우우우우, 우우우우
+Love me only 'til this spring 봄바람처럼
+
+우우우우, 우우우우
+Love resembles misty dream 뜬구름처럼 (뜬구름처럼)
+우우우우, 우우우우
+Love resembles misty dream 뜬구름처럼
+""",
+      "songInfo": """
+소스: Musixmatch
+작사: Ji Eun Lee / Su Ho Lim / Woong Kim / Jooyoung Kim / Min Hyung Cho
+라일락 가사 © Musiccube Inc""",
     },
     {
       'favorite': false,
@@ -26,7 +88,69 @@ class _MusicViewState extends State<MusicView> {
       "title":"Flu",
       "singer":"아이유(IU)",
       "img": "images/iu2.jpeg",
-      "audio": "https://firebasestorage.googleapis.com/v0/b/testsnslogin-13c83.appspot.com/o/byoyomi_20_4.mp3?alt=media&token=04b443f0-2f57-4d4c-a03f-9ce938370bfc"
+      "audio": "https://firebasestorage.googleapis.com/v0/b/testsnslogin-13c83.appspot.com/o/%E1%84%92%E1%85%A9%E1%84%85%E1%85%A1%E1%86%BC%E1%84%89%E1%85%AE%E1%84%8B%E1%85%AF%E1%86%AF%E1%84%80%E1%85%A1%20cover%20by%20%E1%84%90%E1%85%A9%E1%84%81%E1%85%B5%E1%84%8F%E1%85%A9%E1%86%BC.mp3?alt=media&token=e0ee8135-3deb-46ea-bd22-1b2c17fd15e0",
+      "lyrics": """
+나리는 꽃가루에 눈이 따끔해 (아야)
+눈물이 고여도 꾹 참을래
+내 마음 한켠 비밀스런 오르골에 넣어두고서
+영원히 되감을 순간이니까
+
+우리 둘의 마지막 페이지를 잘 부탁해
+어느 작별이 이보다 완벽할까?
+Love me only 'til this spring
+
+오, 라일락, 꽃이 지는 날 goodbye
+이런 결말이 어울려, 안녕 꽃잎 같은 안녕
+하이얀 우리 봄날의 climax
+아, 얼마나 기쁜 일이야
+
+우우우우, 우우우우
+Love me only 'til this spring 봄바람처럼
+우우우우, 우우우우
+Love me only 'til this spring 봄바람처럼
+
+기분이 달아 콧노래 부르네 (랄라)
+입꼬리는 살짝 올린 채
+어쩜 이렇게 하늘은 더 바람은 또 완벽한 건지
+오늘따라 내 모습 맘에 들어
+
+처음 만난 그날처럼 예쁘다고 말해줄래
+어느 이별이 이토록 달콤할까?
+Love resembles misty dream
+
+오, 라일락, 꽃이 지는 날 goodbye
+이런 결말이 어울려, 안녕 꽃잎 같은 안녕
+하이얀 우리 봄날의 climax
+아, 얼마나 기쁜 일이야
+
+우우우우, 우우우우
+Love resembles misty dream 뜬구름처럼
+우우우우, 우우우우
+Love resembles misty dream 뜬구름처럼
+
+너도 언젠가 날 잊게 될까?
+지금 표정과 오늘의 향기도?
+단잠 사이에 스쳐간 봄날의 꿈처럼
+
+오, 라일락, 꽃이 지는 날 goodbye
+너의 대답이 날 울려, 안녕 약속 같은 안녕
+하이얀 우리 봄날에 climax
+아, 얼마나 기쁜 일이야
+
+우우우우, 우우우우
+Love me only 'til this spring 봄바람처럼
+우우우우, 우우우우
+Love me only 'til this spring 봄바람처럼
+
+우우우우, 우우우우
+Love resembles misty dream 뜬구름처럼 (뜬구름처럼)
+우우우우, 우우우우
+Love resembles misty dream 뜬구름처럼
+""",
+      "songInfo": """
+소스: Musixmatch
+작사: Ji Eun Lee / Su Ho Lim / Woong Kim / Jooyoung Kim / Min Hyung Cho
+라일락 가사 © Musiccube Inc""",
     },
     {
       'favorite': false,
@@ -34,7 +158,69 @@ class _MusicViewState extends State<MusicView> {
       "title":"Coin",
       "singer":"아이유(IU)",
       "img": "images/iu3.jpeg",
-      "audio": "https://firebasestorage.googleapis.com/v0/b/testsnslogin-13c83.appspot.com/o/byoyomi_20_4.mp3?alt=media&token=04b443f0-2f57-4d4c-a03f-9ce938370bfc"
+      "audio": "https://firebasestorage.googleapis.com/v0/b/testsnslogin-13c83.appspot.com/o/%E1%84%92%E1%85%A9%E1%84%85%E1%85%A1%E1%86%BC%E1%84%89%E1%85%AE%E1%84%8B%E1%85%AF%E1%86%AF%E1%84%80%E1%85%A1%20cover%20by%20%E1%84%90%E1%85%A9%E1%84%81%E1%85%B5%E1%84%8F%E1%85%A9%E1%86%BC.mp3?alt=media&token=e0ee8135-3deb-46ea-bd22-1b2c17fd15e0",
+      "lyrics": """
+나리는 꽃가루에 눈이 따끔해 (아야)
+눈물이 고여도 꾹 참을래
+내 마음 한켠 비밀스런 오르골에 넣어두고서
+영원히 되감을 순간이니까
+
+우리 둘의 마지막 페이지를 잘 부탁해
+어느 작별이 이보다 완벽할까?
+Love me only 'til this spring
+
+오, 라일락, 꽃이 지는 날 goodbye
+이런 결말이 어울려, 안녕 꽃잎 같은 안녕
+하이얀 우리 봄날의 climax
+아, 얼마나 기쁜 일이야
+
+우우우우, 우우우우
+Love me only 'til this spring 봄바람처럼
+우우우우, 우우우우
+Love me only 'til this spring 봄바람처럼
+
+기분이 달아 콧노래 부르네 (랄라)
+입꼬리는 살짝 올린 채
+어쩜 이렇게 하늘은 더 바람은 또 완벽한 건지
+오늘따라 내 모습 맘에 들어
+
+처음 만난 그날처럼 예쁘다고 말해줄래
+어느 이별이 이토록 달콤할까?
+Love resembles misty dream
+
+오, 라일락, 꽃이 지는 날 goodbye
+이런 결말이 어울려, 안녕 꽃잎 같은 안녕
+하이얀 우리 봄날의 climax
+아, 얼마나 기쁜 일이야
+
+우우우우, 우우우우
+Love resembles misty dream 뜬구름처럼
+우우우우, 우우우우
+Love resembles misty dream 뜬구름처럼
+
+너도 언젠가 날 잊게 될까?
+지금 표정과 오늘의 향기도?
+단잠 사이에 스쳐간 봄날의 꿈처럼
+
+오, 라일락, 꽃이 지는 날 goodbye
+너의 대답이 날 울려, 안녕 약속 같은 안녕
+하이얀 우리 봄날에 climax
+아, 얼마나 기쁜 일이야
+
+우우우우, 우우우우
+Love me only 'til this spring 봄바람처럼
+우우우우, 우우우우
+Love me only 'til this spring 봄바람처럼
+
+우우우우, 우우우우
+Love resembles misty dream 뜬구름처럼 (뜬구름처럼)
+우우우우, 우우우우
+Love resembles misty dream 뜬구름처럼
+""",
+      "songInfo": """
+소스: Musixmatch
+작사: Ji Eun Lee / Su Ho Lim / Woong Kim / Jooyoung Kim / Min Hyung Cho
+라일락 가사 © Musiccube Inc""",
     },
     {
       'favorite': false,
@@ -42,7 +228,69 @@ class _MusicViewState extends State<MusicView> {
       "title":"봄 안녕 봄",
       "singer":"아이유(IU)",
       "img": "images/iu4.jpeg",
-      "audio": "https://firebasestorage.googleapis.com/v0/b/testsnslogin-13c83.appspot.com/o/byoyomi_20_4.mp3?alt=media&token=04b443f0-2f57-4d4c-a03f-9ce938370bfc"
+      "audio": "https://firebasestorage.googleapis.com/v0/b/testsnslogin-13c83.appspot.com/o/%E1%84%92%E1%85%A9%E1%84%85%E1%85%A1%E1%86%BC%E1%84%89%E1%85%AE%E1%84%8B%E1%85%AF%E1%86%AF%E1%84%80%E1%85%A1%20cover%20by%20%E1%84%90%E1%85%A9%E1%84%81%E1%85%B5%E1%84%8F%E1%85%A9%E1%86%BC.mp3?alt=media&token=e0ee8135-3deb-46ea-bd22-1b2c17fd15e0",
+      "lyrics": """
+나리는 꽃가루에 눈이 따끔해 (아야)
+눈물이 고여도 꾹 참을래
+내 마음 한켠 비밀스런 오르골에 넣어두고서
+영원히 되감을 순간이니까
+
+우리 둘의 마지막 페이지를 잘 부탁해
+어느 작별이 이보다 완벽할까?
+Love me only 'til this spring
+
+오, 라일락, 꽃이 지는 날 goodbye
+이런 결말이 어울려, 안녕 꽃잎 같은 안녕
+하이얀 우리 봄날의 climax
+아, 얼마나 기쁜 일이야
+
+우우우우, 우우우우
+Love me only 'til this spring 봄바람처럼
+우우우우, 우우우우
+Love me only 'til this spring 봄바람처럼
+
+기분이 달아 콧노래 부르네 (랄라)
+입꼬리는 살짝 올린 채
+어쩜 이렇게 하늘은 더 바람은 또 완벽한 건지
+오늘따라 내 모습 맘에 들어
+
+처음 만난 그날처럼 예쁘다고 말해줄래
+어느 이별이 이토록 달콤할까?
+Love resembles misty dream
+
+오, 라일락, 꽃이 지는 날 goodbye
+이런 결말이 어울려, 안녕 꽃잎 같은 안녕
+하이얀 우리 봄날의 climax
+아, 얼마나 기쁜 일이야
+
+우우우우, 우우우우
+Love resembles misty dream 뜬구름처럼
+우우우우, 우우우우
+Love resembles misty dream 뜬구름처럼
+
+너도 언젠가 날 잊게 될까?
+지금 표정과 오늘의 향기도?
+단잠 사이에 스쳐간 봄날의 꿈처럼
+
+오, 라일락, 꽃이 지는 날 goodbye
+너의 대답이 날 울려, 안녕 약속 같은 안녕
+하이얀 우리 봄날에 climax
+아, 얼마나 기쁜 일이야
+
+우우우우, 우우우우
+Love me only 'til this spring 봄바람처럼
+우우우우, 우우우우
+Love me only 'til this spring 봄바람처럼
+
+우우우우, 우우우우
+Love resembles misty dream 뜬구름처럼 (뜬구름처럼)
+우우우우, 우우우우
+Love resembles misty dream 뜬구름처럼
+""",
+      "songInfo": """
+소스: Musixmatch
+작사: Ji Eun Lee / Su Ho Lim / Woong Kim / Jooyoung Kim / Min Hyung Cho
+라일락 가사 © Musiccube Inc""",
     },
     {
       'favorite': false,
@@ -50,7 +298,69 @@ class _MusicViewState extends State<MusicView> {
       "title":"Celebrity",
       "singer":"아이유(IU)",
       "img": "images/iu5.jpeg",
-      "audio": "https://firebasestorage.googleapis.com/v0/b/testsnslogin-13c83.appspot.com/o/byoyomi_20_4.mp3?alt=media&token=04b443f0-2f57-4d4c-a03f-9ce938370bfc"
+      "audio": "https://firebasestorage.googleapis.com/v0/b/testsnslogin-13c83.appspot.com/o/%E1%84%92%E1%85%A9%E1%84%85%E1%85%A1%E1%86%BC%E1%84%89%E1%85%AE%E1%84%8B%E1%85%AF%E1%86%AF%E1%84%80%E1%85%A1%20cover%20by%20%E1%84%90%E1%85%A9%E1%84%81%E1%85%B5%E1%84%8F%E1%85%A9%E1%86%BC.mp3?alt=media&token=e0ee8135-3deb-46ea-bd22-1b2c17fd15e0",
+      "lyrics": """
+나리는 꽃가루에 눈이 따끔해 (아야)
+눈물이 고여도 꾹 참을래
+내 마음 한켠 비밀스런 오르골에 넣어두고서
+영원히 되감을 순간이니까
+
+우리 둘의 마지막 페이지를 잘 부탁해
+어느 작별이 이보다 완벽할까?
+Love me only 'til this spring
+
+오, 라일락, 꽃이 지는 날 goodbye
+이런 결말이 어울려, 안녕 꽃잎 같은 안녕
+하이얀 우리 봄날의 climax
+아, 얼마나 기쁜 일이야
+
+우우우우, 우우우우
+Love me only 'til this spring 봄바람처럼
+우우우우, 우우우우
+Love me only 'til this spring 봄바람처럼
+
+기분이 달아 콧노래 부르네 (랄라)
+입꼬리는 살짝 올린 채
+어쩜 이렇게 하늘은 더 바람은 또 완벽한 건지
+오늘따라 내 모습 맘에 들어
+
+처음 만난 그날처럼 예쁘다고 말해줄래
+어느 이별이 이토록 달콤할까?
+Love resembles misty dream
+
+오, 라일락, 꽃이 지는 날 goodbye
+이런 결말이 어울려, 안녕 꽃잎 같은 안녕
+하이얀 우리 봄날의 climax
+아, 얼마나 기쁜 일이야
+
+우우우우, 우우우우
+Love resembles misty dream 뜬구름처럼
+우우우우, 우우우우
+Love resembles misty dream 뜬구름처럼
+
+너도 언젠가 날 잊게 될까?
+지금 표정과 오늘의 향기도?
+단잠 사이에 스쳐간 봄날의 꿈처럼
+
+오, 라일락, 꽃이 지는 날 goodbye
+너의 대답이 날 울려, 안녕 약속 같은 안녕
+하이얀 우리 봄날에 climax
+아, 얼마나 기쁜 일이야
+
+우우우우, 우우우우
+Love me only 'til this spring 봄바람처럼
+우우우우, 우우우우
+Love me only 'til this spring 봄바람처럼
+
+우우우우, 우우우우
+Love resembles misty dream 뜬구름처럼 (뜬구름처럼)
+우우우우, 우우우우
+Love resembles misty dream 뜬구름처럼
+""",
+      "songInfo": """
+소스: Musixmatch
+작사: Ji Eun Lee / Su Ho Lim / Woong Kim / Jooyoung Kim / Min Hyung Cho
+라일락 가사 © Musiccube Inc""",
     },
     {
       'favorite': false,
@@ -58,7 +368,69 @@ class _MusicViewState extends State<MusicView> {
       "title":"돌림노래 (Feat. DEAN)",
       "singer":"아이유(IU)",
       "img": "images/iu6.jpeg",
-      "audio": "https://st.bslmeiyu.com/uploads/%E6%9C%97%E6%96%87%E5%9B%BD%E9%99%85SBS%E7%B3%BB%E5%88%97/%E6%9C%97%E6%96%87%E5%9B%BD%E9%99%85%E8%8B%B1%E8%AF%AD%E6%95%99%E7%A8%8B%E7%AC%AC1%E5%86%8C_V2/%E5%AD%A6%E7%94%9F%E7%94%A8%E4%B9%A6/P150_Chapter%2016_1Model%20Conversation.mp3"
+      "audio": "https://firebasestorage.googleapis.com/v0/b/testsnslogin-13c83.appspot.com/o/%E1%84%92%E1%85%A9%E1%84%85%E1%85%A1%E1%86%BC%E1%84%89%E1%85%AE%E1%84%8B%E1%85%AF%E1%86%AF%E1%84%80%E1%85%A1%20cover%20by%20%E1%84%90%E1%85%A9%E1%84%81%E1%85%B5%E1%84%8F%E1%85%A9%E1%86%BC.mp3?alt=media&token=e0ee8135-3deb-46ea-bd22-1b2c17fd15e0",
+      "lyrics": """
+나리는 꽃가루에 눈이 따끔해 (아야)
+눈물이 고여도 꾹 참을래
+내 마음 한켠 비밀스런 오르골에 넣어두고서
+영원히 되감을 순간이니까
+
+우리 둘의 마지막 페이지를 잘 부탁해
+어느 작별이 이보다 완벽할까?
+Love me only 'til this spring
+
+오, 라일락, 꽃이 지는 날 goodbye
+이런 결말이 어울려, 안녕 꽃잎 같은 안녕
+하이얀 우리 봄날의 climax
+아, 얼마나 기쁜 일이야
+
+우우우우, 우우우우
+Love me only 'til this spring 봄바람처럼
+우우우우, 우우우우
+Love me only 'til this spring 봄바람처럼
+
+기분이 달아 콧노래 부르네 (랄라)
+입꼬리는 살짝 올린 채
+어쩜 이렇게 하늘은 더 바람은 또 완벽한 건지
+오늘따라 내 모습 맘에 들어
+
+처음 만난 그날처럼 예쁘다고 말해줄래
+어느 이별이 이토록 달콤할까?
+Love resembles misty dream
+
+오, 라일락, 꽃이 지는 날 goodbye
+이런 결말이 어울려, 안녕 꽃잎 같은 안녕
+하이얀 우리 봄날의 climax
+아, 얼마나 기쁜 일이야
+
+우우우우, 우우우우
+Love resembles misty dream 뜬구름처럼
+우우우우, 우우우우
+Love resembles misty dream 뜬구름처럼
+
+너도 언젠가 날 잊게 될까?
+지금 표정과 오늘의 향기도?
+단잠 사이에 스쳐간 봄날의 꿈처럼
+
+오, 라일락, 꽃이 지는 날 goodbye
+너의 대답이 날 울려, 안녕 약속 같은 안녕
+하이얀 우리 봄날에 climax
+아, 얼마나 기쁜 일이야
+
+우우우우, 우우우우
+Love me only 'til this spring 봄바람처럼
+우우우우, 우우우우
+Love me only 'til this spring 봄바람처럼
+
+우우우우, 우우우우
+Love resembles misty dream 뜬구름처럼 (뜬구름처럼)
+우우우우, 우우우우
+Love resembles misty dream 뜬구름처럼
+""",
+      "songInfo": """
+소스: Musixmatch
+작사: Ji Eun Lee / Su Ho Lim / Woong Kim / Jooyoung Kim / Min Hyung Cho
+라일락 가사 © Musiccube Inc""",
     },
     {
       'favorite': false,
@@ -66,7 +438,69 @@ class _MusicViewState extends State<MusicView> {
       "title":"빈 컵 (Empty Cup)",
       "singer":"아이유(IU)",
       "img": "images/iu7.jpeg",
-      "audio": "https://st.bslmeiyu.com/uploads/%E6%9C%97%E6%96%87%E5%9B%BD%E9%99%85SBS%E7%B3%BB%E5%88%97/%E6%9C%97%E6%96%87%E5%9B%BD%E9%99%85%E8%8B%B1%E8%AF%AD%E6%95%99%E7%A8%8B%E7%AC%AC1%E5%86%8C_V2/%E5%AD%A6%E7%94%9F%E7%94%A8%E4%B9%A6/P150_Chapter%2016_1Model%20Conversation.mp3"
+      "audio": "https://firebasestorage.googleapis.com/v0/b/testsnslogin-13c83.appspot.com/o/%E1%84%92%E1%85%A9%E1%84%85%E1%85%A1%E1%86%BC%E1%84%89%E1%85%AE%E1%84%8B%E1%85%AF%E1%86%AF%E1%84%80%E1%85%A1%20cover%20by%20%E1%84%90%E1%85%A9%E1%84%81%E1%85%B5%E1%84%8F%E1%85%A9%E1%86%BC.mp3?alt=media&token=e0ee8135-3deb-46ea-bd22-1b2c17fd15e0",
+      "lyrics": """
+나리는 꽃가루에 눈이 따끔해 (아야)
+눈물이 고여도 꾹 참을래
+내 마음 한켠 비밀스런 오르골에 넣어두고서
+영원히 되감을 순간이니까
+
+우리 둘의 마지막 페이지를 잘 부탁해
+어느 작별이 이보다 완벽할까?
+Love me only 'til this spring
+
+오, 라일락, 꽃이 지는 날 goodbye
+이런 결말이 어울려, 안녕 꽃잎 같은 안녕
+하이얀 우리 봄날의 climax
+아, 얼마나 기쁜 일이야
+
+우우우우, 우우우우
+Love me only 'til this spring 봄바람처럼
+우우우우, 우우우우
+Love me only 'til this spring 봄바람처럼
+
+기분이 달아 콧노래 부르네 (랄라)
+입꼬리는 살짝 올린 채
+어쩜 이렇게 하늘은 더 바람은 또 완벽한 건지
+오늘따라 내 모습 맘에 들어
+
+처음 만난 그날처럼 예쁘다고 말해줄래
+어느 이별이 이토록 달콤할까?
+Love resembles misty dream
+
+오, 라일락, 꽃이 지는 날 goodbye
+이런 결말이 어울려, 안녕 꽃잎 같은 안녕
+하이얀 우리 봄날의 climax
+아, 얼마나 기쁜 일이야
+
+우우우우, 우우우우
+Love resembles misty dream 뜬구름처럼
+우우우우, 우우우우
+Love resembles misty dream 뜬구름처럼
+
+너도 언젠가 날 잊게 될까?
+지금 표정과 오늘의 향기도?
+단잠 사이에 스쳐간 봄날의 꿈처럼
+
+오, 라일락, 꽃이 지는 날 goodbye
+너의 대답이 날 울려, 안녕 약속 같은 안녕
+하이얀 우리 봄날에 climax
+아, 얼마나 기쁜 일이야
+
+우우우우, 우우우우
+Love me only 'til this spring 봄바람처럼
+우우우우, 우우우우
+Love me only 'til this spring 봄바람처럼
+
+우우우우, 우우우우
+Love resembles misty dream 뜬구름처럼 (뜬구름처럼)
+우우우우, 우우우우
+Love resembles misty dream 뜬구름처럼
+""",
+      "songInfo": """
+소스: Musixmatch
+작사: Ji Eun Lee / Su Ho Lim / Woong Kim / Jooyoung Kim / Min Hyung Cho
+라일락 가사 © Musiccube Inc""",
     },
     {
       'favorite': false,
@@ -74,7 +508,69 @@ class _MusicViewState extends State<MusicView> {
       "title":"아이와 나의 바다",
       "singer":"아이유(IU)",
       "img": "images/iu8.jpeg",
-      "audio": "https://st.bslmeiyu.com/uploads/%E6%9C%97%E6%96%87%E5%9B%BD%E9%99%85SBS%E7%B3%BB%E5%88%97/%E6%9C%97%E6%96%87%E5%9B%BD%E9%99%85%E8%8B%B1%E8%AF%AD%E6%95%99%E7%A8%8B%E7%AC%AC1%E5%86%8C_V2/%E5%AD%A6%E7%94%9F%E7%94%A8%E4%B9%A6/P150_Chapter%2016_1Model%20Conversation.mp3"
+      "audio": "https://firebasestorage.googleapis.com/v0/b/testsnslogin-13c83.appspot.com/o/%E1%84%92%E1%85%A9%E1%84%85%E1%85%A1%E1%86%BC%E1%84%89%E1%85%AE%E1%84%8B%E1%85%AF%E1%86%AF%E1%84%80%E1%85%A1%20cover%20by%20%E1%84%90%E1%85%A9%E1%84%81%E1%85%B5%E1%84%8F%E1%85%A9%E1%86%BC.mp3?alt=media&token=e0ee8135-3deb-46ea-bd22-1b2c17fd15e0",
+      "lyrics": """
+나리는 꽃가루에 눈이 따끔해 (아야)
+눈물이 고여도 꾹 참을래
+내 마음 한켠 비밀스런 오르골에 넣어두고서
+영원히 되감을 순간이니까
+
+우리 둘의 마지막 페이지를 잘 부탁해
+어느 작별이 이보다 완벽할까?
+Love me only 'til this spring
+
+오, 라일락, 꽃이 지는 날 goodbye
+이런 결말이 어울려, 안녕 꽃잎 같은 안녕
+하이얀 우리 봄날의 climax
+아, 얼마나 기쁜 일이야
+
+우우우우, 우우우우
+Love me only 'til this spring 봄바람처럼
+우우우우, 우우우우
+Love me only 'til this spring 봄바람처럼
+
+기분이 달아 콧노래 부르네 (랄라)
+입꼬리는 살짝 올린 채
+어쩜 이렇게 하늘은 더 바람은 또 완벽한 건지
+오늘따라 내 모습 맘에 들어
+
+처음 만난 그날처럼 예쁘다고 말해줄래
+어느 이별이 이토록 달콤할까?
+Love resembles misty dream
+
+오, 라일락, 꽃이 지는 날 goodbye
+이런 결말이 어울려, 안녕 꽃잎 같은 안녕
+하이얀 우리 봄날의 climax
+아, 얼마나 기쁜 일이야
+
+우우우우, 우우우우
+Love resembles misty dream 뜬구름처럼
+우우우우, 우우우우
+Love resembles misty dream 뜬구름처럼
+
+너도 언젠가 날 잊게 될까?
+지금 표정과 오늘의 향기도?
+단잠 사이에 스쳐간 봄날의 꿈처럼
+
+오, 라일락, 꽃이 지는 날 goodbye
+너의 대답이 날 울려, 안녕 약속 같은 안녕
+하이얀 우리 봄날에 climax
+아, 얼마나 기쁜 일이야
+
+우우우우, 우우우우
+Love me only 'til this spring 봄바람처럼
+우우우우, 우우우우
+Love me only 'til this spring 봄바람처럼
+
+우우우우, 우우우우
+Love resembles misty dream 뜬구름처럼 (뜬구름처럼)
+우우우우, 우우우우
+Love resembles misty dream 뜬구름처럼
+""",
+      "songInfo": """
+소스: Musixmatch
+작사: Ji Eun Lee / Su Ho Lim / Woong Kim / Jooyoung Kim / Min Hyung Cho
+라일락 가사 © Musiccube Inc""",
     },
     {
       'favorite': false,
@@ -82,7 +578,69 @@ class _MusicViewState extends State<MusicView> {
       "title":"어푸 (Ah puh)",
       "singer":"아이유(IU)",
       "img": "images/iu9.jpeg",
-      "audio": "https://st.bslmeiyu.com/uploads/%E6%9C%97%E6%96%87%E5%9B%BD%E9%99%85SBS%E7%B3%BB%E5%88%97/%E6%9C%97%E6%96%87%E5%9B%BD%E9%99%85%E8%8B%B1%E8%AF%AD%E6%95%99%E7%A8%8B%E7%AC%AC1%E5%86%8C_V2/%E5%AD%A6%E7%94%9F%E7%94%A8%E4%B9%A6/P150_Chapter%2016_1Model%20Conversation.mp3"
+      "audio": "https://firebasestorage.googleapis.com/v0/b/testsnslogin-13c83.appspot.com/o/%E1%84%92%E1%85%A9%E1%84%85%E1%85%A1%E1%86%BC%E1%84%89%E1%85%AE%E1%84%8B%E1%85%AF%E1%86%AF%E1%84%80%E1%85%A1%20cover%20by%20%E1%84%90%E1%85%A9%E1%84%81%E1%85%B5%E1%84%8F%E1%85%A9%E1%86%BC.mp3?alt=media&token=e0ee8135-3deb-46ea-bd22-1b2c17fd15e0",
+      "lyrics": """
+나리는 꽃가루에 눈이 따끔해 (아야)
+눈물이 고여도 꾹 참을래
+내 마음 한켠 비밀스런 오르골에 넣어두고서
+영원히 되감을 순간이니까
+
+우리 둘의 마지막 페이지를 잘 부탁해
+어느 작별이 이보다 완벽할까?
+Love me only 'til this spring
+
+오, 라일락, 꽃이 지는 날 goodbye
+이런 결말이 어울려, 안녕 꽃잎 같은 안녕
+하이얀 우리 봄날의 climax
+아, 얼마나 기쁜 일이야
+
+우우우우, 우우우우
+Love me only 'til this spring 봄바람처럼
+우우우우, 우우우우
+Love me only 'til this spring 봄바람처럼
+
+기분이 달아 콧노래 부르네 (랄라)
+입꼬리는 살짝 올린 채
+어쩜 이렇게 하늘은 더 바람은 또 완벽한 건지
+오늘따라 내 모습 맘에 들어
+
+처음 만난 그날처럼 예쁘다고 말해줄래
+어느 이별이 이토록 달콤할까?
+Love resembles misty dream
+
+오, 라일락, 꽃이 지는 날 goodbye
+이런 결말이 어울려, 안녕 꽃잎 같은 안녕
+하이얀 우리 봄날의 climax
+아, 얼마나 기쁜 일이야
+
+우우우우, 우우우우
+Love resembles misty dream 뜬구름처럼
+우우우우, 우우우우
+Love resembles misty dream 뜬구름처럼
+
+너도 언젠가 날 잊게 될까?
+지금 표정과 오늘의 향기도?
+단잠 사이에 스쳐간 봄날의 꿈처럼
+
+오, 라일락, 꽃이 지는 날 goodbye
+너의 대답이 날 울려, 안녕 약속 같은 안녕
+하이얀 우리 봄날에 climax
+아, 얼마나 기쁜 일이야
+
+우우우우, 우우우우
+Love me only 'til this spring 봄바람처럼
+우우우우, 우우우우
+Love me only 'til this spring 봄바람처럼
+
+우우우우, 우우우우
+Love resembles misty dream 뜬구름처럼 (뜬구름처럼)
+우우우우, 우우우우
+Love resembles misty dream 뜬구름처럼
+""",
+      "songInfo": """
+소스: Musixmatch
+작사: Ji Eun Lee / Su Ho Lim / Woong Kim / Jooyoung Kim / Min Hyung Cho
+라일락 가사 © Musiccube Inc""",
     },
     {
       'favorite': false,
@@ -90,20 +648,75 @@ class _MusicViewState extends State<MusicView> {
       "title":"에필로그",
       "singer":"아이유(IU)",
       "img": "images/iu10.jpeg",
-      "audio": "https://st.bslmeiyu.com/uploads/%E6%9C%97%E6%96%87%E5%9B%BD%E9%99%85SBS%E7%B3%BB%E5%88%97/%E6%9C%97%E6%96%87%E5%9B%BD%E9%99%85%E8%8B%B1%E8%AF%AD%E6%95%99%E7%A8%8B%E7%AC%AC1%E5%86%8C_V2/%E5%AD%A6%E7%94%9F%E7%94%A8%E4%B9%A6/P150_Chapter%2016_1Model%20Conversation.mp3"
+      "audio": "https://firebasestorage.googleapis.com/v0/b/testsnslogin-13c83.appspot.com/o/%E1%84%92%E1%85%A9%E1%84%85%E1%85%A1%E1%86%BC%E1%84%89%E1%85%AE%E1%84%8B%E1%85%AF%E1%86%AF%E1%84%80%E1%85%A1%20cover%20by%20%E1%84%90%E1%85%A9%E1%84%81%E1%85%B5%E1%84%8F%E1%85%A9%E1%86%BC.mp3?alt=media&token=e0ee8135-3deb-46ea-bd22-1b2c17fd15e0",
+      "lyrics": """
+나리는 꽃가루에 눈이 따끔해 (아야)
+눈물이 고여도 꾹 참을래
+내 마음 한켠 비밀스런 오르골에 넣어두고서
+영원히 되감을 순간이니까
+
+우리 둘의 마지막 페이지를 잘 부탁해
+어느 작별이 이보다 완벽할까?
+Love me only 'til this spring
+
+오, 라일락, 꽃이 지는 날 goodbye
+이런 결말이 어울려, 안녕 꽃잎 같은 안녕
+하이얀 우리 봄날의 climax
+아, 얼마나 기쁜 일이야
+
+우우우우, 우우우우
+Love me only 'til this spring 봄바람처럼
+우우우우, 우우우우
+Love me only 'til this spring 봄바람처럼
+
+기분이 달아 콧노래 부르네 (랄라)
+입꼬리는 살짝 올린 채
+어쩜 이렇게 하늘은 더 바람은 또 완벽한 건지
+오늘따라 내 모습 맘에 들어
+
+처음 만난 그날처럼 예쁘다고 말해줄래
+어느 이별이 이토록 달콤할까?
+Love resembles misty dream
+
+오, 라일락, 꽃이 지는 날 goodbye
+이런 결말이 어울려, 안녕 꽃잎 같은 안녕
+하이얀 우리 봄날의 climax
+아, 얼마나 기쁜 일이야
+
+우우우우, 우우우우
+Love resembles misty dream 뜬구름처럼
+우우우우, 우우우우
+Love resembles misty dream 뜬구름처럼
+
+너도 언젠가 날 잊게 될까?
+지금 표정과 오늘의 향기도?
+단잠 사이에 스쳐간 봄날의 꿈처럼
+
+오, 라일락, 꽃이 지는 날 goodbye
+너의 대답이 날 울려, 안녕 약속 같은 안녕
+하이얀 우리 봄날에 climax
+아, 얼마나 기쁜 일이야
+
+우우우우, 우우우우
+Love me only 'til this spring 봄바람처럼
+우우우우, 우우우우
+Love me only 'til this spring 봄바람처럼
+
+우우우우, 우우우우
+Love resembles misty dream 뜬구름처럼 (뜬구름처럼)
+우우우우, 우우우우
+Love resembles misty dream 뜬구름처럼
+""",
+      "songInfo": """
+소스: Musixmatch
+작사: Ji Eun Lee / Su Ho Lim / Woong Kim / Jooyoung Kim / Min Hyung Cho
+라일락 가사 © Musiccube Inc""",
     },
   ];
 
 
-
   @override
   Widget build(BuildContext context) {
-
-    // String listIndex(i){
-    //   int? i;
-    //   this.musicData.indexOf()
-    //   return i.toString();
-    // }
 
     return Container(
       color:  Colors.grey.shade100,
@@ -131,10 +744,16 @@ class _MusicViewState extends State<MusicView> {
             child: Row(
               children: [
                 Container(
-                  //width: MediaQuery.of(context).size.width*0.6,
+                  width: MediaQuery.of(context).size.width/5,
+                    height: 90,
                     margin: EdgeInsets.only(left: 10,top: 10,bottom: 10),
-                    child: Image.asset(this.musicData[i]["img"],scale: 1,),
-                    decoration: BoxDecoration(),
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(10),
+                      image: DecorationImage(
+                        fit: BoxFit.cover,
+                        image: AssetImage(this.musicData[i]["img"])
+                      )
+                    ),
                   ),
                 Container(
                   //color: Colors.blue,

@@ -15,10 +15,10 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
 
   final List<String> _topImgs = [
-    "images/pic-9.png",
-    "images/pic-8.png",
-    "images/pic-7.png",
-    "images/pic-6.png",
+    "images/iu_top4.jpeg",
+    "images/iu_top1.jpeg",
+    "images/iu_top2.jpeg",
+    "images/iu_top3.jpeg",
   ];
 
   final List<Map<String,dynamic>> _centerButtonItem = [
@@ -113,12 +113,15 @@ class _HomePageState extends State<HomePage> {
                         itemCount: this._topImgs.length,
                         itemBuilder: (BuildContext context, i)
                         => Container(
-                          child: Image.asset(this._topImgs[i].toString()),
                           height: 180,
                           width: MediaQuery.of(context).size.width,
                           margin: EdgeInsets.only(right: 10),
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(15),
+                            image: DecorationImage(
+                              fit: BoxFit.fill,
+                              image: AssetImage(this._topImgs[i].toString())
+                            )
                           ),
                         )
                     ),

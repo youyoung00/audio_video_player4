@@ -74,7 +74,7 @@ class _ViewsState extends State<Views> {
   void initState() {
     super.initState();
     Future.microtask(() async {
-      _controller = VideoPlayerController.asset(this.widget.mvDataIndex["url"])..initialize();
+      _controller = VideoPlayerController.network(this.widget.mvDataIndex["url"])..initialize();
       _controller?.addListener(() {
         if(this._controller!.value.isInitialized) {
           if (!this.mounted) return;

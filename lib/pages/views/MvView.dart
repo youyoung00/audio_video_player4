@@ -15,19 +15,19 @@ class _MvViewState extends State<MvView> {
 
     {
       'thumbnail' : 'https://cdn.pixabay.com/photo/2017/01/18/17/14/girl-1990347__340.jpg',
-      'url' : 'videos/FogTL.mp4',
+      'url' : 'https://firebasestorage.googleapis.com/v0/b/testsnslogin-13c83.appspot.com/o/%5BMV%5D%20IU(%E1%84%8B%E1%85%A1%E1%84%8B%E1%85%B5%E1%84%8B%E1%85%B2)_LILAC(%E1%84%85%E1%85%A1%E1%84%8B%E1%85%B5%E1%86%AF%E1%84%85%E1%85%A1%E1%86%A8).mp4?alt=media&token=41e01c03-e376-49e0-b538-490443c5fc23',
       'check' : false,
       'favorite' : false,
     },
     {
       'thumbnail' : 'https://cdn.pixabay.com/photo/2017/11/02/20/31/guitars-2912447__480.jpg',
-      'url' : 'videos/realshort.mp4',
+      'url' : 'https://firebasestorage.googleapis.com/v0/b/testsnslogin-13c83.appspot.com/o/%5BMV%5D%20IU(%E1%84%8B%E1%85%A1%E1%84%8B%E1%85%B5%E1%84%8B%E1%85%B2)_LILAC(%E1%84%85%E1%85%A1%E1%84%8B%E1%85%B5%E1%86%AF%E1%84%85%E1%85%A1%E1%86%A8).mp4?alt=media&token=41e01c03-e376-49e0-b538-490443c5fc23',
       'check' : false,
       'favorite' : false,
     },
     {
       'thumbnail' : 'https://cdn.pixabay.com/photo/2016/01/14/06/09/woman-1139397__480.jpg',
-      'url' : 'videos/AntiguaArchTL.mp4',
+      'url' : 'https://firebasestorage.googleapis.com/v0/b/testsnslogin-13c83.appspot.com/o/%5BMV%5D%20IU(%E1%84%8B%E1%85%A1%E1%84%8B%E1%85%B5%E1%84%8B%E1%85%B2)_LILAC(%E1%84%85%E1%85%A1%E1%84%8B%E1%85%B5%E1%86%AF%E1%84%85%E1%85%A1%E1%86%A8).mp4?alt=media&token=41e01c03-e376-49e0-b538-490443c5fc23',
       'check': false,
       'favorite' : false,
     },
