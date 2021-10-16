@@ -4,8 +4,9 @@ import 'package:video_player/video_player.dart';
 
 class MvDetailPage extends StatefulWidget {
   List<Map<String,dynamic>> videoDatas;
+  String mvTitle;
   int prevClickIndex;
-  MvDetailPage({Key? key, required this.videoDatas, required this.prevClickIndex}) : super(key: key);
+  MvDetailPage({Key? key, required this.videoDatas, required this.prevClickIndex, required this.mvTitle}) : super(key: key);
 
   @override
   _MvDetailPageState createState() => _MvDetailPageState();
@@ -17,8 +18,14 @@ class _MvDetailPageState extends State<MvDetailPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Colors.redAccent,
+        title: Text(this.widget.mvTitle),
+        centerTitle: true,
         actions: [
-
+          IconButton(
+            icon: Icon(Icons.search),
+            onPressed: (){},
+          ),
         ],
       ),
       body: ListView.builder(

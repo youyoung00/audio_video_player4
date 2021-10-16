@@ -33,6 +33,8 @@ class _MvViewState extends State<MvView> {
     },
   ];
 
+  String mvTitle = "Video";
+
   int? prevClickIndex;
 
   @override
@@ -55,6 +57,7 @@ class _MvViewState extends State<MvView> {
                       await Navigator.of(context).push(
                         MaterialPageRoute(
                           builder: (BuildContext context) => MvDetailPage(
+                            mvTitle: this.mvTitle,
                             videoDatas: this.videoDatas,
                             prevClickIndex: i,
                           )
@@ -66,7 +69,7 @@ class _MvViewState extends State<MvView> {
                     child: Container(
                       height: MediaQuery.of(context).size.width/1.8,
                       decoration: BoxDecoration(
-                        color: Colors.red,
+                        //color: Colors.red,
                         image: DecorationImage(
                             fit: BoxFit.cover,
                             image: NetworkImage(this.videoDatas[i]["thumbnail"])

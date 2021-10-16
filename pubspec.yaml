@@ -67,14 +67,16 @@ flutter:
     - videos/AntiguaArchTL.mp4
     - videos/FogTL.mp4
     - videos/realshort.mp4
-    - images/pic-9.png
-    - images/pic-8.png
-    - images/pic-7.png
-    - images/pic-6.png
-    - images/pic-5.png
-    - images/pic-3.png
-    - images/pic-2.png
-    - images/pic-1.png
+    - images/iu10.jpeg
+    - images/iu9.jpeg
+    - images/iu8.jpeg
+    - images/iu7.jpeg
+    - images/iu6.jpeg
+    - images/iu5.jpeg
+    - images/iu4.jpeg
+    - images/iu3.jpeg
+    - images/iu2.jpeg
+    - images/iu1.jpeg
     - images/loop.png
     - images/menu.png
     - images/forward.png
@@ -96,17 +98,40 @@ flutter:
   # "family" key with the font family name, and a "fonts" key with a
   # list giving the asset and other descriptors for the font. For
   # example:
-  # fonts:
-  #   - family: Schyler
-  #     fonts:
-  #       - asset: fonts/Schyler-Regular.ttf
-  #       - asset: fonts/Schyler-Italic.ttf
-  #         style: italic
-  #   - family: Trajan Pro
-  #     fonts:
-  #       - asset: fonts/TrajanPro.ttf
-  #       - asset: fonts/TrajanPro_Bold.ttf
-  #         weight: 700
-  #
+  fonts:
+  - family: Roboto
+    fonts:
+      - asset: font/Roboto/Roboto-Regular.ttf
+      - asset: font/Roboto/Roboto-Thin.ttf
+      - asset: font/Roboto/Roboto-ThinItalic.ttf
+      - asset: font/Roboto/Roboto-Black.ttf
+      - asset: font/Roboto/Roboto-BlackItalic.ttf
+      - asset: font/Roboto/Roboto-BlackItalic.ttf
+      - asset: font/Roboto/Roboto-BoldCondensed.ttf
+      - asset: font/Roboto/Roboto-BoldCondensedItalic.ttf
+      - asset: font/Roboto/Roboto-BoldItalic.ttf
+      - asset: font/Roboto/Roboto-Condensed.ttf
+      - asset: font/Roboto/Roboto-CondensedItalic.ttf
+      - asset: font/Roboto/Roboto-Italic.ttf
+      - asset: font/Roboto/Roboto-Light.ttf
+      - asset: font/Roboto/Roboto-LightItalic.ttf
+      - asset: font/Roboto/Roboto-Medium.ttf
+
+fonts:
+      - family: Noto_Sans_KR
+      - fonts:
+         - asset: font/Noto_Sans_KR/NotoSansKR-Black.otf
+         - asset: font/Noto_Sans_KR/NotoSansKR-Bold.otf
+         - asset: font/Noto_Sans_KR/NotoSansKR-Light.otf
+         - asset: font/Noto_Sans_KR/NotoSansKR-Medium.otf
+         - asset: font/Noto_Sans_KR/NotoSansKR-Regular.otf
+         - asset: font/Noto_Sans_KR/NotoSansKR-Thin.otf
+
+    #- family: Trajan Pro
+     # fonts:
+      #  - asset: fonts/TrajanPro.ttf
+       # - asset: fonts/TrajanPro_Bold.ttf
+           #weight: 700
+
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages

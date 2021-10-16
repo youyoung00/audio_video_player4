@@ -5,7 +5,8 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatefulWidget {
-  const HomePage({Key? key}) : super(key: key);
+
+  const HomePage( {Key? key,}) : super(key: key);
 
   @override
   State<HomePage> createState() => _HomePageState();
@@ -22,27 +23,22 @@ class _HomePageState extends State<HomePage> {
 
   final List<Map<String,dynamic>> _centerButtonItem = [
     {
-      'txt': 'Music',
+      'txt': '수록곡',
       'color': Colors.deepPurpleAccent,
     },
     {
-      'txt': 'MV',
+      'txt': '뮤직비디오',
       'color': Colors.redAccent,
     },
     {
-      'txt': 'ThankTo',
-      'color': Colors.amberAccent,
+      'txt': '앨범정보',
+      'color': Colors.lightGreen
+      ,
     },
   ];
 
 
-
-  List<Widget> _views = [
-    MusicView(),
-    MvView(),
-    ThankToView()
-  ];
-
+  String mainTitle = "IU 5th Album 'LILAC'";
   PageController _musicPageController = PageController();
   PageController _topPageController = PageController(viewportFraction: 0.8);
 
@@ -56,6 +52,12 @@ class _HomePageState extends State<HomePage> {
 
   @override
   Widget build(BuildContext context) {
+
+    List<Widget> _views = [
+      MusicView(),
+      MvView(),
+      ThankToView()
+    ];
 
     return Scaffold(
       drawer: Drawer(),
@@ -78,15 +80,16 @@ class _HomePageState extends State<HomePage> {
                 padding: EdgeInsets.only(left: 20.0,bottom: 10.0),
                 alignment: Alignment.centerLeft,
                 child: Text(
-                  "Music",
+                  this.mainTitle,
                   style: TextStyle(
-                      fontSize: 30.0
+                    fontSize: 26.0,
+                    fontFamily: 'Roboto'
                   ),
                 ),
               ),
               this._topBannerImg(),
               this._centerButtons(),
-              this._itemList(context),
+              this._itemList(context, _views),
             ],
           ),
         ),
@@ -126,16 +129,16 @@ class _HomePageState extends State<HomePage> {
     );
   }
 
-  Widget _itemList(BuildContext context){
+  Widget _itemList(BuildContext context, List<Widget> views){
     return  Expanded(
       child: Container(
         width: MediaQuery.of(context).size.width,
         child: PageView.builder(
           physics: NeverScrollableScrollPhysics(),
           controller: this._musicPageController,
-          itemCount: this._views.length,
+          itemCount: views.length,
           itemBuilder: (BuildContext context, int i){
-            return this._views[i];
+            return views[i];
           },
         ),
       ),
@@ -162,10 +165,15 @@ class _HomePageState extends State<HomePage> {
                 ),
               ),
               backgroundColor: MaterialStateProperty.all(item['color']),
-              textStyle: MaterialStateProperty.all(TextStyle(fontSize: 20.0,)),
+              textStyle: MaterialStateProperty.all(TextStyle(fontSize: 18.0,)),
               fixedSize: MaterialStateProperty.all(Size(120.0, 50),),
             ),
-            child: Text(item['txt']),
+            child: Text(
+              item['txt'],
+              style: TextStyle(
+                fontFamily: 'Noto_Sans_KR',
+              ),
+            ),
           )).toList()
       ),
     );

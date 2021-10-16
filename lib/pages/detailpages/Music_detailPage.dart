@@ -80,17 +80,17 @@ class _MusicDetailPageState extends State<MusicDetailPage> {
                       children: [
                         SizedBox(height: screenHeight*0.1,),
                         Text(
-                          "THE WATER LIFE",
+                          this.widget.musicData['title'],
                           style: TextStyle(
-                            fontSize: 30,
+                            fontSize: 24,
                             fontWeight: FontWeight.bold,
                             fontFamily: "Avenir",
                           ),
                         ),
                         Text(
-                          "Hazard Hyatt",
+                          this.widget.musicData['singer'],
                           style: TextStyle(
-                            fontSize: 20,
+                            fontSize: 18,
                           ),
                         ),
                         AudioFile(advancedPlayer: this.advancedPlayer!, audioPath: this.widget.musicData["audio"]),

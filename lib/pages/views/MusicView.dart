@@ -15,74 +15,95 @@ class _MusicViewState extends State<MusicView> {
     {
       'favorite': false,
       "rating": 0.0,
-      "title":"THE WATER CURE",
-      "text":"Martin Hyatt",
-      "img": "images/pic-1.png",
+      "title": "라일락",
+      "singer":"아이유(IU)",
+      "img": "images/iu1.jpeg",
       "audio": "https://firebasestorage.googleapis.com/v0/b/testsnslogin-13c83.appspot.com/o/byoyomi_20_4.mp3?alt=media&token=04b443f0-2f57-4d4c-a03f-9ce938370bfc"
     },
     {
       'favorite': false,
       "rating": 0.0,
-      "title":"PEACE LIFE",
-      "text":"Hazard Bin",
-      "img": "images/pic-2.png",
+      "title":"Flu",
+      "singer":"아이유(IU)",
+      "img": "images/iu2.jpeg",
       "audio": "https://firebasestorage.googleapis.com/v0/b/testsnslogin-13c83.appspot.com/o/byoyomi_20_4.mp3?alt=media&token=04b443f0-2f57-4d4c-a03f-9ce938370bfc"
     },
     {
       'favorite': false,
       "rating": 0.0,
-      "title":"Day Remember",
-      "text":"Nicholos",
-      "img": "images/pic-3.png",
+      "title":"Coin",
+      "singer":"아이유(IU)",
+      "img": "images/iu3.jpeg",
       "audio": "https://firebasestorage.googleapis.com/v0/b/testsnslogin-13c83.appspot.com/o/byoyomi_20_4.mp3?alt=media&token=04b443f0-2f57-4d4c-a03f-9ce938370bfc"
     },
     {
       'favorite': false,
       "rating": 0.0,
-      "title":"France",
-      "text":"Paris",
-      "img": "images/pic-3.png",
+      "title":"봄 안녕 봄",
+      "singer":"아이유(IU)",
+      "img": "images/iu4.jpeg",
       "audio": "https://firebasestorage.googleapis.com/v0/b/testsnslogin-13c83.appspot.com/o/byoyomi_20_4.mp3?alt=media&token=04b443f0-2f57-4d4c-a03f-9ce938370bfc"
     },
     {
       'favorite': false,
       "rating": 0.0,
-      "title":"Germany",
-      "text":"Berlin",
-      "img": "images/pic-5.png",
+      "title":"Celebrity",
+      "singer":"아이유(IU)",
+      "img": "images/iu5.jpeg",
       "audio": "https://firebasestorage.googleapis.com/v0/b/testsnslogin-13c83.appspot.com/o/byoyomi_20_4.mp3?alt=media&token=04b443f0-2f57-4d4c-a03f-9ce938370bfc"
     },
     {
       'favorite': false,
       "rating": 0.0,
-      "title":"Italy",
-      "text":"Rome",
-      "img": "images/pic-1.png",
+      "title":"돌림노래 (Feat. DEAN)",
+      "singer":"아이유(IU)",
+      "img": "images/iu6.jpeg",
       "audio": "https://st.bslmeiyu.com/uploads/%E6%9C%97%E6%96%87%E5%9B%BD%E9%99%85SBS%E7%B3%BB%E5%88%97/%E6%9C%97%E6%96%87%E5%9B%BD%E9%99%85%E8%8B%B1%E8%AF%AD%E6%95%99%E7%A8%8B%E7%AC%AC1%E5%86%8C_V2/%E5%AD%A6%E7%94%9F%E7%94%A8%E4%B9%A6/P150_Chapter%2016_1Model%20Conversation.mp3"
     },
     {
       'favorite': false,
       "rating": 0.0,
-      "title":"Switzerland",
-      "text":"Bern",
-      "img": "images/pic-1.png",
+      "title":"빈 컵 (Empty Cup)",
+      "singer":"아이유(IU)",
+      "img": "images/iu7.jpeg",
       "audio": "https://st.bslmeiyu.com/uploads/%E6%9C%97%E6%96%87%E5%9B%BD%E9%99%85SBS%E7%B3%BB%E5%88%97/%E6%9C%97%E6%96%87%E5%9B%BD%E9%99%85%E8%8B%B1%E8%AF%AD%E6%95%99%E7%A8%8B%E7%AC%AC1%E5%86%8C_V2/%E5%AD%A6%E7%94%9F%E7%94%A8%E4%B9%A6/P150_Chapter%2016_1Model%20Conversation.mp3"
     },
     {
       'favorite': false,
       "rating": 0.0,
-      "title":"Singapore",
-      "text":"Singapore",
-      "img": "images/pic-1.png",
+      "title":"아이와 나의 바다",
+      "singer":"아이유(IU)",
+      "img": "images/iu8.jpeg",
       "audio": "https://st.bslmeiyu.com/uploads/%E6%9C%97%E6%96%87%E5%9B%BD%E9%99%85SBS%E7%B3%BB%E5%88%97/%E6%9C%97%E6%96%87%E5%9B%BD%E9%99%85%E8%8B%B1%E8%AF%AD%E6%95%99%E7%A8%8B%E7%AC%AC1%E5%86%8C_V2/%E5%AD%A6%E7%94%9F%E7%94%A8%E4%B9%A6/P150_Chapter%2016_1Model%20Conversation.mp3"
-    }
+    },
+    {
+      'favorite': false,
+      "rating": 0.0,
+      "title":"어푸 (Ah puh)",
+      "singer":"아이유(IU)",
+      "img": "images/iu9.jpeg",
+      "audio": "https://st.bslmeiyu.com/uploads/%E6%9C%97%E6%96%87%E5%9B%BD%E9%99%85SBS%E7%B3%BB%E5%88%97/%E6%9C%97%E6%96%87%E5%9B%BD%E9%99%85%E8%8B%B1%E8%AF%AD%E6%95%99%E7%A8%8B%E7%AC%AC1%E5%86%8C_V2/%E5%AD%A6%E7%94%9F%E7%94%A8%E4%B9%A6/P150_Chapter%2016_1Model%20Conversation.mp3"
+    },
+    {
+      'favorite': false,
+      "rating": 0.0,
+      "title":"에필로그",
+      "singer":"아이유(IU)",
+      "img": "images/iu10.jpeg",
+      "audio": "https://st.bslmeiyu.com/uploads/%E6%9C%97%E6%96%87%E5%9B%BD%E9%99%85SBS%E7%B3%BB%E5%88%97/%E6%9C%97%E6%96%87%E5%9B%BD%E9%99%85%E8%8B%B1%E8%AF%AD%E6%95%99%E7%A8%8B%E7%AC%AC1%E5%86%8C_V2/%E5%AD%A6%E7%94%9F%E7%94%A8%E4%B9%A6/P150_Chapter%2016_1Model%20Conversation.mp3"
+    },
   ];
 
-  //double rating = 0;
+
 
   @override
   Widget build(BuildContext context) {
 
+    // String listIndex(i){
+    //   int? i;
+    //   this.musicData.indexOf()
+    //   return i.toString();
+    // }
 
     return Container(
       color:  Colors.grey.shade100,
@@ -110,8 +131,9 @@ class _MusicViewState extends State<MusicView> {
             child: Row(
               children: [
                 Container(
+                  //width: MediaQuery.of(context).size.width*0.6,
                     margin: EdgeInsets.only(left: 10,top: 10,bottom: 10),
-                    child: Image.asset(this.musicData[i]["img"]),
+                    child: Image.asset(this.musicData[i]["img"],scale: 1,),
                     decoration: BoxDecoration(),
                   ),
                 Container(
@@ -126,8 +148,7 @@ class _MusicViewState extends State<MusicView> {
                       Container(
                         //color: Colors.red,
                         //padding: EdgeInsets.only(bottom: 5.0),
-                        child: Text(
-                          "TITLE",
+                        child: Text("${i.toString()}. ${this.musicData[i]["title"]}",
                           //textAlign: TextAlign.left,
                           style: TextStyle(
                             fontSize: 16,
@@ -139,10 +160,10 @@ class _MusicViewState extends State<MusicView> {
                         //color: Colors.green,
                         // padding: EdgeInsets.only(bottom: 5.0),
                         child: Text(
-                          "SubTitle",
+                          this.musicData[i]["singer"],
                           style: TextStyle(
-                            fontSize: 16,
-                            color: Colors.grey.shade400
+                            fontSize: 15,
+                            color: Colors.grey.shade600
                           ),
                         ),
                       ),
