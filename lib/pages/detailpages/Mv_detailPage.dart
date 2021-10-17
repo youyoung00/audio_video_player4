@@ -1,3 +1,4 @@
+import 'package:audio_video_player3/pages/views/MvView.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:video_player/video_player.dart';
@@ -18,6 +19,17 @@ class _MvDetailPageState extends State<MvDetailPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        leading: Container(
+          child: IconButton(
+            icon: Icon(Icons.arrow_back_ios_sharp, color: Colors.white,),
+            onPressed: (){
+              Navigator.of(context).pop(
+                  MaterialPageRoute(builder: (BuildContext context) => MvView(),
+                )
+              );
+            },
+          ),
+        ),
         backgroundColor: Colors.redAccent,
         title: Text(this.widget.mvTitle),
         centerTitle: true,
