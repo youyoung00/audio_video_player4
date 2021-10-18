@@ -5,7 +5,7 @@ import 'package:http/http.dart' as http;
 
 class LoginPage extends StatefulWidget {
   LoginPage({Key? key}) : super(key: key);
-  static const String path = '/';
+
 
   @override
   State<LoginPage> createState() => _LoginPageState();
@@ -13,6 +13,7 @@ class LoginPage extends StatefulWidget {
 
 class _LoginPageState extends State<LoginPage> {
 
+  final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
   TextEditingController idCt = TextEditingController();
   TextEditingController pwCt = TextEditingController();
 
@@ -36,41 +37,38 @@ class _LoginPageState extends State<LoginPage> {
         body: Stack(
           alignment: Alignment.center,
           children: [
-            SingleChildScrollView(
+            Expanded(
               child: Container(
-                color: Colors.white,
+                width: size.width,
+                //color: Colors.deepPurpleAccent,
+                decoration: BoxDecoration(
+                  color: Colors.deepPurpleAccent,
+                  image: DecorationImage(
+                    fit: BoxFit.cover,
+                    image: NetworkImage("https://image.shutterstock.com/image-vector/portrait-newlymarried-love-couple-wedding-600w-1939017307.jpg")
+                  ),
+                ),
               ),
             ),
             Column(
               mainAxisAlignment: MainAxisAlignment.end ,
               children: [
-                Container(
-                  decoration: BoxDecoration(
-                      image: DecorationImage(
-                          fit: BoxFit.fill,
-                          image: NetworkImage("https://cdn.pixabay.com/photo/2015/02/10/17/41/red-631346__480.jpg")
-                      ),
-                      color: Colors.red,
-                      borderRadius: BorderRadius.circular(100)
-                  ),
-                  width: size.width*0.8,
-                  height: size.width*0.8,
-                  // child: Image.asset(
-                  //   "img/pic-1.png",
-                  //   //fit: BoxFit.cover,
-                  // ),
-                ),
                 Stack(
                   children: [
-                    _inputForm(size),
-                    _loginButton(size),
+                    _inputForm2(size),
+                    //_loginTextButton(size)
                   ],
                 ),
                 Container(
                   height: size.height*0.04,
                   //color: Colors.red,
                 ),
-                Text("Password Hints Are Anniversary."),
+                Text(
+                  "Password Hints Are Anniversary.",
+                  style: TextStyle(
+                    color: Colors.grey.shade600
+                  ),
+                ),
                 Container(
                   height: size.height*0.05,
                 )
@@ -85,6 +83,7 @@ class _LoginPageState extends State<LoginPage> {
     return  Padding(
       padding: EdgeInsets.all(size.width*0.05),
       child: Card(
+        color: Colors.transparent,
         shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(16)
         ),
@@ -132,6 +131,40 @@ class _LoginPageState extends State<LoginPage> {
     );
   }
 
+  Widget _inputForm2(size){
+    return Column(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: [
+        Container(
+            width: 200.0,
+            child: TextField(
+              focusNode: this.idF,
+              controller: this.idCt,
+              keyboardType: TextInputType.emailAddress,
+              textInputAction: TextInputAction.next,
+              decoration: InputDecoration(
+                  hintText: "아이디",fillColor: Colors.grey.shade600
+                  //border: InputBorder.none
+              ),
+            )
+        ),
+        Container(
+            width: 200.0,
+            child: TextField(
+              focusNode: this.pwF,
+              controller: this.pwCt,
+              obscureText: true,
+              decoration: InputDecoration(
+                  hintText: "비밀번호",fillColor: Colors.grey.shade600
+                  //border: InputBorder.none
+              ),
+            )
+        ),
+        _loginTextButton(size)
+      ],
+    );
+  }
+
   Widget _loginButton(Size size){
     return Positioned(
         left: size.width*0.15,
@@ -141,6 +174,7 @@ class _LoginPageState extends State<LoginPage> {
           height: 50,
           child: ElevatedButton(
             style: ButtonStyle(
+              //backgroundColor: MaterialStateProperty.all(Colors.transparent),
                 shape: MaterialStateProperty.all<RoundedRectangleBorder>(
                     RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(18.0)
@@ -152,6 +186,53 @@ class _LoginPageState extends State<LoginPage> {
               style: TextStyle(
                 fontSize: 20.0,
               ),
+            ),
+            onPressed: () async{
+              print(this.idCt.text);
+              print(this.pwCt.text);
+              http.Response res = await http.post(Uri.parse("http://192.168.219.150:3000/login"),
+                  body: {'id':this.idCt.text,'pw':this.pwCt.text}
+              );
+              bool isCheck = json.decode(res.body);
+              print(isCheck);
+              if(isCheck == false){
+                return showDialog(
+                  context: context,
+                  builder: (BuildContext context) => AlertDialog(
+                    title: Text("아이디와 비밀번호를 맞춰보세요"),
+                    actions: [
+                      TextButton(
+                        child: Text("닫기"),
+                        onPressed: (){
+                          Navigator.of(context).pop();
+                        },
+                      )
+                    ],
+                  ),
+                );
+              }
+              Navigator.of(context).push(
+                  MaterialPageRoute(
+                      builder: (BuildContext context) => HomePage()
+                  )
+              );
+            },
+          ),
+        )
+    );
+  }
+
+  Widget _loginTextButton(Size size){
+    return Positioned(
+        left: size.width*0.15,
+        right: size.width*0.15,
+        bottom: 0,
+        child: SizedBox(
+          height: 50,
+          child: TextButton(
+            child: Text(
+              "로그인",
+              style: TextStyle(color: Colors.grey.shade600,fontSize: 20),
             ),
             onPressed: () async{
               print(this.idCt.text);
