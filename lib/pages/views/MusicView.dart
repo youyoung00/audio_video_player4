@@ -1,3 +1,4 @@
+import 'package:audio_video_player3/models/musicdatamodel.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 import 'package:audio_video_player3/pages/detailpages/Music_detailPage.dart';
 import 'package:flutter/cupertino.dart';
@@ -10,7 +11,7 @@ class MusicView extends StatefulWidget {
 }
 
 class _MusicViewState extends State<MusicView> {
-  final List<Map<String,dynamic>> musicData = [
+  final List<Map<String,dynamic>> musicData = [ //모델링 데이터 2
 
     {
       'favorite': false,
@@ -714,21 +715,43 @@ Love resembles misty dream 뜬구름처럼
     },
   ];
 
+  List<MusicDataModel>? mData;
+
+  @override
+  void initState() {
+    setState(() {
+      this.mData = this.musicData.map(
+        (Map<String,dynamic> e) => MusicDataModel(
+          title: e['title'],
+          favorite: e['favorite'],
+          rating: e['rating'],
+          singer: e['singer'],
+          img: e['img'],
+          audio: e['audio'],
+          lyrics: e['lyrics'],
+          songInfo: e['singInfo'],
+        )
+      ).toList();
+    });
+    super.initState();
+  }
 
   @override
   Widget build(BuildContext context) {
 
-    return Container(
+    return this.mData == null
+        ? Center(child: Text("데이터 로딩 중..."),)
+        : Container(
       color:  Colors.grey.shade100,
       width: MediaQuery.of(context).size.width,
       child: ListView.builder(
-        itemCount: this.musicData.length,
+        itemCount: this.mData!.length,
         itemBuilder: (BuildContext context, int i)
         => GestureDetector(
           onTap: ()async{
             await Navigator.of(context).push(
               MaterialPageRoute(builder: (BuildContext context) => MusicDetailPage(
-                musicData: this.musicData[i],
+                musicData: this.mData![i],
                 index: i,
               ))
             );
@@ -751,7 +774,7 @@ Love resembles misty dream 뜬구름처럼
                       borderRadius: BorderRadius.circular(10),
                       image: DecorationImage(
                         fit: BoxFit.cover,
-                        image: AssetImage(this.musicData[i]["img"])
+                        image: AssetImage(this.mData![i].img.toString())
                       )
                     ),
                   ),
@@ -767,7 +790,7 @@ Love resembles misty dream 뜬구름처럼
                       Container(
                         //color: Colors.red,
                         //padding: EdgeInsets.only(bottom: 5.0),
-                        child: Text("${i.toString()}. ${this.musicData[i]["title"]}",
+                        child: Text("${i.toString()}. ${this.mData![i].title.toString()}",
                           //textAlign: TextAlign.left,
                           style: TextStyle(
                             fontSize: 16,
@@ -779,7 +802,7 @@ Love resembles misty dream 뜬구름처럼
                         //color: Colors.green,
                         // padding: EdgeInsets.only(bottom: 5.0),
                         child: Text(
-                          this.musicData[i]["singer"],
+                          this.mData![i].singer.toString(),
                           style: TextStyle(
                             fontSize: 15,
                             color: Colors.grey.shade600
@@ -797,7 +820,8 @@ Love resembles misty dream 뜬구름처럼
                               => Icon(Icons.star, color: Colors.amber,),
                               onRatingUpdate: (rating){
                                 setState(() {
-                                  this.musicData[i]['rating'] = rating;
+                                  // this.musicData[i]['rating'] = rating;
+                                  this.mData![s].rating = rating;
                                 });
                               },
                             ),
@@ -824,12 +848,12 @@ Love resembles misty dream 뜬구름처럼
                     //padding: EdgeInsets.only(bottom: 5.0),
                       child: IconButton(
                         icon: Icon(
-                          this.musicData[i]['favorite'] ? Icons.favorite_rounded : Icons.favorite_border_rounded,
+                          this.mData![i].favorite ? Icons.favorite_rounded : Icons.favorite_border_rounded,
                           color: Colors.deepOrange,
                         ),
                         onPressed: (){
                           setState((){
-                            this.musicData[i]['favorite'] = !this.musicData[i]['favorite'];
+                            this.mData![i].favorite = !this.mData![i].favorite;
                           });
                         },
                       ),

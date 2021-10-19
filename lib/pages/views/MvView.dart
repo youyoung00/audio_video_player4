@@ -11,7 +11,7 @@ class MvView extends StatefulWidget {
 
 class _MvViewState extends State<MvView> {
 
-  List<Map<String, dynamic>> videoDatas = [
+  List<Map<String, dynamic>> videoDatas = [ // 모델링 데이터 4
 
     {
       'videoTitle' : 'LILAC(라일락)',

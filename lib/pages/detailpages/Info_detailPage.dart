@@ -5,7 +5,7 @@ import 'package:flutter/cupertino.dart';
 class InfoDetailPage extends StatelessWidget {
   InfoDetailPage({Key? key}) : super(key: key);
 
-  String infoDetailTitle = "‘아이유(IU)’ 정규 5집 [LILAC]";
+  String infoDetailTitle = "‘아이유(IU)’ 정규 5집 [LILAC]"; // 모델링 데이터 3
   String infoDetailTxt = """
 
 “안녕 꽃잎 같은 안녕”

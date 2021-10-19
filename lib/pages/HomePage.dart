@@ -1,3 +1,4 @@
+import 'package:audio_video_player3/models/topbannermodel.dart';
 import 'package:audio_video_player3/pages/views/MusicView.dart';
 import 'package:audio_video_player3/pages/views/MvView.dart';
 import 'package:audio_video_player3/pages/views/ThankToView.dart';
@@ -14,31 +15,31 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
 
-  final List<String> _topImgs = [
+  TopBannerModel topBennerModel = TopBannerModel(
+    topImgs: [
     "images/iu_main_img.jpeg",
     "images/iu_top4.jpeg",
     "images/iu_top2.jpeg",
     "images/iu_top3.jpeg",
-  ];
+    ],
+    mainTitle: "IU 5th Album 'LILAC'",
+    centerButtonItem: [
+      {
+        'txt': '수록곡',
+        'color': Colors.deepPurpleAccent,
+      },
+      {
+        'txt': '뮤직비디오',
+        'color': Colors.redAccent,
+      },
+      {
+        'txt': '앨범정보',
+        'color': Colors.lightGreen
+        ,
+      },
+    ],
+  );
 
-  final List<Map<String,dynamic>> _centerButtonItem = [
-    {
-      'txt': '수록곡',
-      'color': Colors.deepPurpleAccent,
-    },
-    {
-      'txt': '뮤직비디오',
-      'color': Colors.redAccent,
-    },
-    {
-      'txt': '앨범정보',
-      'color': Colors.lightGreen
-      ,
-    },
-  ];
-
-
-  String mainTitle = "IU 5th Album 'LILAC'";
   PageController _musicPageController = PageController();
   PageController _topPageController = PageController(viewportFraction: 0.8);
 
@@ -80,7 +81,7 @@ class _HomePageState extends State<HomePage> {
                 padding: EdgeInsets.only(left: 20.0,bottom: 10.0),
                 alignment: Alignment.centerLeft,
                 child: Text(
-                  this.mainTitle,
+                  this.topBennerModel.mainTitle.toString(),
                   style: TextStyle(
                     fontSize: 26.0,
                     fontFamily: 'Roboto'
@@ -110,7 +111,7 @@ class _HomePageState extends State<HomePage> {
                     height: 180,
                     child: PageView.builder(
                         controller: this._topPageController, // 전역변수로 올리기!!
-                        itemCount: this._topImgs.length,
+                        itemCount: this.topBennerModel.topImgs.length,
                         itemBuilder: (BuildContext context, i)
                         => Container(
                           height: 180,
@@ -120,7 +121,7 @@ class _HomePageState extends State<HomePage> {
                             borderRadius: BorderRadius.circular(15),
                             image: DecorationImage(
                               fit: BoxFit.cover,
-                              image: AssetImage(this._topImgs[i].toString())
+                              image: AssetImage(this.topBennerModel.topImgs[i])
                             )
                           ),
                         )
@@ -154,11 +155,11 @@ class _HomePageState extends State<HomePage> {
       height: 80,
       child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceAround,
-          children: this._centerButtonItem.map<Widget>((Map<String,dynamic> item)
+          children: this.topBennerModel.centerButtonItem.map<Widget>((Map<String,dynamic> item)
           => ElevatedButton(
             onPressed: (){
               if(!this._musicPageController.hasClients) return;
-              this._musicPageController.jumpToPage(this._centerButtonItem.indexOf(item));
+              this._musicPageController.jumpToPage(this.topBennerModel.centerButtonItem.indexOf(item));
               setState(() {});
             },
             style: ButtonStyle(
