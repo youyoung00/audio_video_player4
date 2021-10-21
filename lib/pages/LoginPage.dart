@@ -190,7 +190,7 @@ class _LoginPageState extends State<LoginPage> {
             onPressed: () async{
               print(this.idCt.text);
               print(this.pwCt.text);
-              http.Response res = await http.post(Uri.parse("http://192.168.219.150:3000/login"),
+              http.Response res = await http.post(Uri.parse("http://192.168.0.77:3000/login"),
                   body: {'id':this.idCt.text,'pw':this.pwCt.text}
               );
               bool isCheck = json.decode(res.body);
@@ -237,7 +237,7 @@ class _LoginPageState extends State<LoginPage> {
             onPressed: () async{
               print(this.idCt.text);
               print(this.pwCt.text);
-              http.Response res = await http.post(Uri.parse("http://192.168.219.150:3000/login"),
+              http.Response res = await http.post(Uri.parse("http://192.168.0.77:3000/login"),
                   body: {'id':this.idCt.text,'pw':this.pwCt.text}
               );
               bool isCheck = json.decode(res.body);

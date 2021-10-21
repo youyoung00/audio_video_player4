@@ -1,3 +1,4 @@
+import 'package:audio_video_player3/models/videodatamodel.dart';
 import 'package:video_player/video_player.dart';
 import 'package:audio_video_player3/pages/detailpages/Mv_detailPage.dart';
 import 'package:flutter/material.dart';
@@ -46,8 +47,34 @@ class _MvViewState extends State<MvView> {
   ];
 
   String mvTitle = "뮤직비디오";
-
   int? prevClickIndex;
+
+  VideoDataModel? videoDataModel;
+
+  @override
+  void initState() {
+    print("데이터 확인${mvTitle.toString()}");
+    setState(() {
+      this.videoDataModel = VideoDataModel(
+          mvTitle: this.mvTitle,
+          prevClickIndex: this.prevClickIndex!,
+          videoData: this.videoDatas.map<VideoDataDetailModel>(
+            (e) => VideoDataDetailModel(
+              favorite: e["favorite"],
+              check: e['check'],
+              company: e['company'].toString(),
+              companyImg: e['companyImg'].toString(),
+              viewCount: e['viewCount'].toString(),
+              url: e['url'].toString(),
+              videoTitle: e['videoTitle'].toString(),
+              thumbnail: e['thumbnail'].toString(),
+            )
+          ).toList()
+      );
+    });
+    super.initState();
+    print("데이터 확인${videoDataModel}");
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -56,7 +83,7 @@ class _MvViewState extends State<MvView> {
     final double screenWidth = MediaQuery.of(context).size.width;
 
     return ListView.builder(
-      itemCount: this.videoDatas.length,
+      itemCount: this.videoDataModel?.videoData.length,
       itemBuilder: (BuildContext context, int i){
         return Container(
           width: MediaQuery.of(context).size.width,
@@ -69,9 +96,9 @@ class _MvViewState extends State<MvView> {
                       await Navigator.of(context).push(
                         MaterialPageRoute(
                           builder: (BuildContext context) => MvDetailPage(
-                            mvTitle: this.mvTitle,
-                            videoDatas: this.videoDatas,
+                            mvTitle: this.mvTitle.toString(),
                             prevClickIndex: i,
+                            videoDatas: this.videoDataModel!.videoData.toList(),
                           )
                         )
                       );
@@ -84,7 +111,10 @@ class _MvViewState extends State<MvView> {
                         //color: Colors.red,
                         image: DecorationImage(
                             fit: BoxFit.cover,
-                            image: NetworkImage(this.videoDatas[i]["thumbnail"])
+                            image: NetworkImage(
+                              //this.videoDatas[i]["thumbnail"],
+                              this.videoDataModel!.videoData[i].thumbnail.toString()
+                            )
                         )
                       ),
                     ),
@@ -115,7 +145,7 @@ class _MvViewState extends State<MvView> {
                           borderRadius: BorderRadius.circular(40),
                           image: DecorationImage(
                               fit: BoxFit.cover,
-                              image: NetworkImage(this.videoDatas[i]["companyImg"].toString())
+                              image: NetworkImage(this.videoDataModel!.videoData[i].companyImg.toString())
                           )
                       ),
                     ),
@@ -129,7 +159,8 @@ class _MvViewState extends State<MvView> {
                               //color: Colors.red,
                               margin: EdgeInsets.only(bottom: 4.0),
                               child: Text(
-                                this.videoDatas[i]["videoTitle"].toString(),
+                                // this.videoDatas[i]["videoTitle"].toString(),
+                                this.videoDataModel!.videoData[i].videoTitle.toString(),
                                 style: TextStyle(
                                   color: Colors.black87,
                                   fontSize: 16,
@@ -141,7 +172,8 @@ class _MvViewState extends State<MvView> {
                             width: MediaQuery.of(context).size.width/2,
                             //color: Colors.blue,
                             child: Text(
-                              this.videoDatas[i]["company"].toString(),
+                              // this.videoDatas[i]["company"].toString(),
+                              this.videoDataModel!.videoData[i].company.toString(),
                               style: TextStyle(
                                   color: Colors.grey.shade600
                               ),
@@ -156,12 +188,12 @@ class _MvViewState extends State<MvView> {
                         alignment: Alignment.bottomRight,
                         child: IconButton(
                           icon: Icon(
-                            this.videoDatas[i]['favorite'] ? Icons.favorite_rounded : Icons.favorite_border_rounded,
+                            this.videoDataModel!.videoData[i].favorite ? Icons.favorite_rounded : Icons.favorite_border_rounded,
                             color: Colors.deepOrange,
                           ),
                           onPressed: (){
                             setState((){
-                              this.videoDatas[i]['favorite'] = !this.videoDatas[i]['favorite'];
+                              this.videoDataModel!.videoData[i].favorite = !this.videoDataModel!.videoData[i].favorite;
                             });
                           },
                         ),

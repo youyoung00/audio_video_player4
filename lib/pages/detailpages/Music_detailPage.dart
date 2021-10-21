@@ -1,9 +1,10 @@
+import 'package:audio_video_player3/models/musicdatamodel.dart';
 import 'package:audio_video_player3/players/audiofile.dart';
 import 'package:flutter/material.dart';
 import 'package:audioplayers/audioplayers.dart';
 
 class MusicDetailPage extends StatefulWidget {
-  final Map<String,dynamic> musicData;
+  final MusicDataModel musicData;
   final int index;
   const MusicDetailPage({Key? key, required this.index, required this.musicData}) : super(key: key);
 
@@ -80,7 +81,7 @@ class _MusicDetailPageState extends State<MusicDetailPage> {
                           children: [
                             SizedBox(height: screenHeight*0.1,),
                             Text(
-                              this.widget.musicData['title'],
+                              this.widget.musicData.title.toString(),
                               style: TextStyle(
                                 fontSize: 24,
                                 fontWeight: FontWeight.bold,
@@ -88,12 +89,12 @@ class _MusicDetailPageState extends State<MusicDetailPage> {
                               ),
                             ),
                             Text(
-                              this.widget.musicData['singer'],
+                              this.widget.musicData.singer,
                               style: TextStyle(
                                 fontSize: 18,
                               ),
                             ),
-                            AudioFile(advancedPlayer: this.advancedPlayer!, audioPath: this.widget.musicData["audio"]),
+                            AudioFile(advancedPlayer: this.advancedPlayer!, audioPath: this.widget.musicData.audio.toString()),
                           ],
                         ),
                       )
@@ -117,7 +118,7 @@ class _MusicDetailPageState extends State<MusicDetailPage> {
                             shape: BoxShape.circle,
                             border: Border.all(color:Colors.white, width: 5),
                             image: DecorationImage(
-                                image: AssetImage(this.widget.musicData["img"]),
+                                image: AssetImage(this.widget.musicData.img.toString()),
                                 fit:BoxFit.cover
                             )
                         ),
@@ -141,12 +142,12 @@ class _MusicDetailPageState extends State<MusicDetailPage> {
                         ),
                         Container(
                           child: Text(
-                            this.widget.musicData["lyrics"],
+                            this.widget.musicData.lyrics.toString(),
                           ),
                         ),
                         Container(
                           child: Text(
-                            this.widget.musicData["songInfo"],
+                            this.widget.musicData.songInfo.toString(),
                           ),
                         ),
                       ],

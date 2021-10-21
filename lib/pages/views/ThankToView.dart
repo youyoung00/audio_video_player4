@@ -48,7 +48,7 @@ class ThankToView extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        //elevation: 0,
+        leading: Container(),
         backgroundColor: Colors.lightGreen,//Colors.grey.shade100,
         title: Text("LILAC",//style: TextStyle(color: Colors.black)
         ),

@@ -1,14 +1,14 @@
 
 class MusicDataModel{
 
-  final bool favorite;
-  final double rating;
-  final String title;
-  final String singer;
-  final String img;
-  final String audio;
-  final String lyrics;
-  final String songInfo;
+   bool favorite;
+   double rating;
+   String title;
+   String singer;
+   String img;
+   String audio;
+   String lyrics;
+   String songInfo;
 
   MusicDataModel({
     required this.favorite,

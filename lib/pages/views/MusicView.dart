@@ -11,7 +11,7 @@ class MusicView extends StatefulWidget {
 }
 
 class _MusicViewState extends State<MusicView> {
-  final List<Map<String,dynamic>> musicData = [ //모델링 데이터 2
+  List<Map<String,dynamic>> musicData = [ //모델링 데이터 2
 
     {
       'favorite': false,
@@ -720,16 +720,15 @@ Love resembles misty dream 뜬구름처럼
   @override
   void initState() {
     setState(() {
-      this.mData = this.musicData.map(
-        (Map<String,dynamic> e) => MusicDataModel(
-          title: e['title'],
+      this.mData = this.musicData.map<MusicDataModel>((e) => MusicDataModel(
+          title: e['title'].toString(),
           favorite: e['favorite'],
           rating: e['rating'],
-          singer: e['singer'],
-          img: e['img'],
-          audio: e['audio'],
-          lyrics: e['lyrics'],
-          songInfo: e['singInfo'],
+          singer: e['singer'].toString(),
+          img: e['img'].toString(),
+          audio: e['audio'].toString(),
+          lyrics: e['lyrics'].toString(),
+          songInfo: e['singInfo'].toString(),
         )
       ).toList();
     });
@@ -740,7 +739,7 @@ Love resembles misty dream 뜬구름처럼
   Widget build(BuildContext context) {
 
     return this.mData == null
-        ? Center(child: Text("데이터 로딩 중..."),)
+        ? Center(child: Text("음악 데이터 로딩 중..."),)
         : Container(
       color:  Colors.grey.shade100,
       width: MediaQuery.of(context).size.width,
@@ -816,19 +815,19 @@ Love resembles misty dream 뜬구름처럼
                             RatingBar.builder(
                               itemSize: 22.0,
                               minRating: 0,
-                              itemBuilder: (BuildContext context, int s)
+                              itemBuilder: (BuildContext context, int i)
                               => Icon(Icons.star, color: Colors.amber,),
                               onRatingUpdate: (rating){
                                 setState(() {
                                   // this.musicData[i]['rating'] = rating;
-                                  this.mData![s].rating = rating;
+                                  this.mData![i].rating = rating;
                                 });
                               },
                             ),
                             Container(
                                 padding: EdgeInsets.only(left: 6),
                                 child: Text(
-                                  '${this.musicData[i]['rating']}',
+                                  '${this.mData![i].rating}',
                                   style: TextStyle(
                                       color: Colors.redAccent,
                                       fontSize: 16

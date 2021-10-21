@@ -23,7 +23,7 @@ class _HomePageState extends State<HomePage> {
     "images/iu_top3.jpeg",
     ],
     mainTitle: "IU 5th Album 'LILAC'",
-    centerButtonItem: [
+    topBannerButtons: [
       {
         'txt': '수록곡',
         'color': Colors.deepPurpleAccent,
@@ -138,7 +138,7 @@ class _HomePageState extends State<HomePage> {
       child: Container(
         width: MediaQuery.of(context).size.width,
         child: PageView.builder(
-          physics: NeverScrollableScrollPhysics(),
+          //physics: NeverScrollableScrollPhysics(),
           controller: this._musicPageController,
           itemCount: views.length,
           itemBuilder: (BuildContext context, int i){
@@ -155,11 +155,11 @@ class _HomePageState extends State<HomePage> {
       height: 80,
       child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceAround,
-          children: this.topBennerModel.centerButtonItem.map<Widget>((Map<String,dynamic> item)
+          children: this.topBennerModel.topBannerButtons.map<Widget>((Map<String,dynamic> item)
           => ElevatedButton(
             onPressed: (){
               if(!this._musicPageController.hasClients) return;
-              this._musicPageController.jumpToPage(this.topBennerModel.centerButtonItem.indexOf(item));
+              this._musicPageController.jumpToPage(this.topBennerModel.topBannerButtons.indexOf(item));
               setState(() {});
             },
             style: ButtonStyle(

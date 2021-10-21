@@ -1,10 +1,11 @@
+import 'package:audio_video_player3/models/videodatamodel.dart';
 import 'package:audio_video_player3/pages/views/MvView.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:video_player/video_player.dart';
 
 class MvDetailPage extends StatefulWidget {
-  List<Map<String,dynamic>> videoDatas;
+  List<VideoDataDetailModel> videoDatas;
   String mvTitle;
   int prevClickIndex;
   MvDetailPage({Key? key, required this.videoDatas, required this.prevClickIndex, required this.mvTitle}) : super(key: key);
@@ -17,6 +18,7 @@ class _MvDetailPageState extends State<MvDetailPage> {
 
   @override
   Widget build(BuildContext context) {
+    print(widget.videoDatas.length);
     return Scaffold(
       appBar: AppBar(
         leading: Container(
@@ -44,15 +46,11 @@ class _MvDetailPageState extends State<MvDetailPage> {
           itemCount: this.widget.videoDatas.length,
           itemBuilder: (BuildContext context, int index) =>
               Views( mvDataIndex: this.widget.videoDatas[index],
-            // favorite: this.widget.videoDatas[index]['favorite'],
-            // thumbnail: this.widget.videoDatas[index]['thumbnail'].toString(),
-            // url: this.widget.videoDatas[index]['url'].toString(),
-            // check: this.widget.videoDatas[index]['check'],
             onPressed: (VideoPlayerController ct) async{
-              if(this.widget.prevClickIndex != null) this.widget.videoDatas[this.widget.prevClickIndex]['check'] = true;
+              if(this.widget.prevClickIndex != null) this.widget.videoDatas[this.widget.prevClickIndex].check = true;
               ct.value.isPlaying ? await ct.pause() : await ct.play();
               this.setState(() {
-                this.widget.videoDatas[index]['check'] = false;
+                this.widget.videoDatas[index].check = false;
                 this.widget.prevClickIndex = index;
               });
               return;
@@ -65,12 +63,8 @@ class _MvDetailPageState extends State<MvDetailPage> {
 
 class Views extends StatefulWidget {
 
-  Map<String,dynamic> mvDataIndex;
+  VideoDataDetailModel mvDataIndex;
 
-  // final String url;
-  // final String thumbnail;
-  // bool check;
-  // bool favorite;
   Future<void> Function(VideoPlayerController ct) onPressed;
   Views({Key? key, required this.mvDataIndex, required this.onPressed}) : super(key: key);
 
@@ -86,7 +80,7 @@ class _ViewsState extends State<Views> {
   void initState() {
     super.initState();
     Future.microtask(() async {
-      _controller = VideoPlayerController.network(this.widget.mvDataIndex["url"])..initialize();
+      _controller = VideoPlayerController.network(this.widget.mvDataIndex.url.toString())..initialize();
       _controller?.addListener(() {
         if(this._controller!.value.isInitialized) {
           if (!this.mounted) return;
@@ -104,7 +98,7 @@ class _ViewsState extends State<Views> {
 
   @override
   Widget build(BuildContext context) {
-    if (widget.mvDataIndex['check']) {
+    if (widget.mvDataIndex.check) {
       if (_controller != null) {
         _controller!.pause();
       }
@@ -127,7 +121,7 @@ class _ViewsState extends State<Views> {
                     child: Container(
                         decoration: BoxDecoration(
                             image: DecorationImage(
-                                image: NetworkImage(widget.mvDataIndex['thumbnail']),
+                                image: NetworkImage(widget.mvDataIndex.thumbnail.toString()),
                                 fit: BoxFit.cover
                             )
                         ),
@@ -162,7 +156,7 @@ class _ViewsState extends State<Views> {
                       borderRadius: BorderRadius.circular(40),
                       image: DecorationImage(
                           fit: BoxFit.cover,
-                          image: NetworkImage(this.widget.mvDataIndex["companyImg"].toString())
+                          image: NetworkImage(this.widget.mvDataIndex.companyImg.toString())
                       )
                   ),
                 ),
@@ -176,7 +170,7 @@ class _ViewsState extends State<Views> {
                         //color: Colors.red,
                           margin: EdgeInsets.only(bottom: 4.0),
                           child: Text(
-                            this.widget.mvDataIndex["videoTitle"].toString(),
+                            this.widget.mvDataIndex.videoTitle.toString(),
                             style: TextStyle(
                               color: Colors.black87,
                               fontSize: 16,
@@ -188,7 +182,7 @@ class _ViewsState extends State<Views> {
                         width: MediaQuery.of(context).size.width/2,
                         //color: Colors.blue,
                         child: Text(
-                          this.widget.mvDataIndex["company"].toString(),
+                          this.widget.mvDataIndex.company.toString(),
                           style: TextStyle(
                               color: Colors.grey.shade600
                           ),
@@ -203,12 +197,12 @@ class _ViewsState extends State<Views> {
                     alignment: Alignment.bottomRight,
                     child: IconButton(
                       icon: Icon(
-                        this.widget.mvDataIndex['favorite'] ? Icons.favorite_rounded : Icons.favorite_border_rounded,
+                        this.widget.mvDataIndex.favorite ? Icons.favorite_rounded : Icons.favorite_border_rounded,
                         color: Colors.deepOrange,
                       ),
                       onPressed: (){
                         setState((){
-                          this.widget.mvDataIndex['favorite'] = !this.widget.mvDataIndex['favorite'];
+                          this.widget.mvDataIndex.favorite = !this.widget.mvDataIndex.favorite;
                         });
                       },
                     ),
