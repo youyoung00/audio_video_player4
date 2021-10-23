@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1043893129829",
+    "project_id": "won1st-a81a5",
+    "storage_bucket": "won1st-a81a5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1043893129829:android:65ea401522c1b2e42c2c8c",
+        "android_client_info": {
+          "package_name": "com.example.audio_video_player3"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1043893129829-s8q65j17fcelucngsu5ov605jip2svm2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBLo0yhOfkK_ZaOP-xhICk3VLWDOqMpZl4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1043893129829-s8q65j17fcelucngsu5ov605jip2svm2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

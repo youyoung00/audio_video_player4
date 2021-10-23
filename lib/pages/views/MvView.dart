@@ -20,7 +20,7 @@ class _MvViewState extends State<MvView> {
       'companyImg':'https://yt3.ggpht.com/ytc/AKedOLR397UeSrsrLTsIMj_4N-3X9tsc5_kHXiHKUCew=s48-c-k-c0x00ffffff-no-rj',
       'viewCount' : '조회수',
       'thumbnail' : 'https://cdn.pixabay.com/photo/2017/01/18/17/14/girl-1990347__340.jpg',
-      'url' : 'https://firebasestorage.googleapis.com/v0/b/testsnslogin-13c83.appspot.com/o/%5BMV%5D%20IU(%E1%84%8B%E1%85%A1%E1%84%8B%E1%85%B5%E1%84%8B%E1%85%B2)_LILAC(%E1%84%85%E1%85%A1%E1%84%8B%E1%85%B5%E1%86%AF%E1%84%85%E1%85%A1%E1%86%A8).mp4?alt=media&token=41e01c03-e376-49e0-b538-490443c5fc23',
+      'url' : 'https://firebasestorage.googleapis.com/v0/b/won1st-a81a5.appspot.com/o/won_video%2Fwon_mv1.mp4?alt=media&token=32c8574e-e3f3-443b-9249-3e8ccee24450',
       'check' : false,
       'favorite' : false,
     },
@@ -30,7 +30,7 @@ class _MvViewState extends State<MvView> {
       'companyImg':'https://yt3.ggpht.com/ytc/AKedOLR397UeSrsrLTsIMj_4N-3X9tsc5_kHXiHKUCew=s48-c-k-c0x00ffffff-no-rj',
       'viewCount' : '조회수',
       'thumbnail' : 'https://cdn.pixabay.com/photo/2017/11/02/20/31/guitars-2912447__480.jpg',
-      'url' : 'https://firebasestorage.googleapis.com/v0/b/testsnslogin-13c83.appspot.com/o/%5BMV%5D%20IU(%E1%84%8B%E1%85%A1%E1%84%8B%E1%85%B5%E1%84%8B%E1%85%B2)%20_%20BBIBBI(%E1%84%88%E1%85%B5%E1%84%88%E1%85%B5).mp4?alt=media&token=984c83c6-23e3-41da-be23-7ccbe14b2e5d',
+      'url' : 'https://firebasestorage.googleapis.com/v0/b/won1st-a81a5.appspot.com/o/won_video%2Fwon_mv1.mp4?alt=media&token=32c8574e-e3f3-443b-9249-3e8ccee24450',
       'check' : false,
       'favorite' : false,
     },
@@ -40,14 +40,14 @@ class _MvViewState extends State<MvView> {
       'companyImg':'https://yt3.ggpht.com/ytc/AKedOLR397UeSrsrLTsIMj_4N-3X9tsc5_kHXiHKUCew=s48-c-k-c0x00ffffff-no-rj',
       'viewCount' : '조회수',
       'thumbnail' : 'https://cdn.pixabay.com/photo/2016/01/14/06/09/woman-1139397__480.jpg',
-      'url' : 'https://firebasestorage.googleapis.com/v0/b/testsnslogin-13c83.appspot.com/o/2002%20cover%20by%20%E1%84%90%E1%85%A9%E1%84%81%E1%85%B5%E1%84%8F%E1%85%A9%E1%86%BC.mp4?alt=media&token=2dbb1fd9-5a74-4247-8991-54db298dd05b',
+      'url' : 'https://firebasestorage.googleapis.com/v0/b/won1st-a81a5.appspot.com/o/won_video%2Fwon_mv1.mp4?alt=media&token=32c8574e-e3f3-443b-9249-3e8ccee24450',
       'check': false,
       'favorite' : false,
     },
   ];
 
   String mvTitle = "뮤직비디오";
-  int? prevClickIndex;
+  int prevClickIndex = 0;
 
   VideoDataModel? videoDataModel;
 
@@ -57,7 +57,7 @@ class _MvViewState extends State<MvView> {
     setState(() {
       this.videoDataModel = VideoDataModel(
           mvTitle: this.mvTitle,
-          prevClickIndex: this.prevClickIndex!,
+          prevClickIndex: this.prevClickIndex,
           videoData: this.videoDatas.map<VideoDataDetailModel>(
             (e) => VideoDataDetailModel(
               favorite: e["favorite"],
@@ -112,7 +112,6 @@ class _MvViewState extends State<MvView> {
                         image: DecorationImage(
                             fit: BoxFit.cover,
                             image: NetworkImage(
-                              //this.videoDatas[i]["thumbnail"],
                               this.videoDataModel!.videoData[i].thumbnail.toString()
                             )
                         )
@@ -131,8 +130,6 @@ class _MvViewState extends State<MvView> {
               ),
               Container(
                 margin: EdgeInsets.only(top: 10,left: 10,right: 10,bottom: 24),
-                //color: Colors.blue,
-                //height: 100,
                 child: Row(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -156,10 +153,8 @@ class _MvViewState extends State<MvView> {
                         children: [
                           Container(
                               width: MediaQuery.of(context).size.width/2,
-                              //color: Colors.red,
                               margin: EdgeInsets.only(bottom: 4.0),
                               child: Text(
-                                // this.videoDatas[i]["videoTitle"].toString(),
                                 this.videoDataModel!.videoData[i].videoTitle.toString(),
                                 style: TextStyle(
                                   color: Colors.black87,
@@ -170,9 +165,7 @@ class _MvViewState extends State<MvView> {
                           ),
                           Container(
                             width: MediaQuery.of(context).size.width/2,
-                            //color: Colors.blue,
                             child: Text(
-                              // this.videoDatas[i]["company"].toString(),
                               this.videoDataModel!.videoData[i].company.toString(),
                               style: TextStyle(
                                   color: Colors.grey.shade600

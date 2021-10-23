@@ -17,10 +17,10 @@ class _HomePageState extends State<HomePage> {
 
   TopBannerModel topBennerModel = TopBannerModel(
     topImgs: [
-    "images/iu_main_img.jpeg",
-    "images/iu_top4.jpeg",
-    "images/iu_top2.jpeg",
-    "images/iu_top3.jpeg",
+    "https://firebasestorage.googleapis.com/v0/b/won1st-a81a5.appspot.com/o/top_banner_images%2Fiu_top1.jpeg?alt=media&token=62132be3-d244-4ee1-8408-6ea900471fc4",
+    "https://firebasestorage.googleapis.com/v0/b/won1st-a81a5.appspot.com/o/top_banner_images%2Fiu_top2.jpeg?alt=media&token=41fcf3cb-a607-426b-9819-9fdcda5b993e",
+    "https://firebasestorage.googleapis.com/v0/b/won1st-a81a5.appspot.com/o/top_banner_images%2Fiu_top3.jpeg?alt=media&token=9b659903-08cb-43dd-8549-c2e0af4c36bd",
+    "https://firebasestorage.googleapis.com/v0/b/won1st-a81a5.appspot.com/o/top_banner_images%2Fiu_top4.jpeg?alt=media&token=31d1f0ea-8dcb-44d5-b9cb-a5819084486d",
     ],
     mainTitle: "IU 5th Album 'LILAC'",
     topBannerButtons: [
@@ -121,7 +121,7 @@ class _HomePageState extends State<HomePage> {
                             borderRadius: BorderRadius.circular(15),
                             image: DecorationImage(
                               fit: BoxFit.cover,
-                              image: AssetImage(this.topBennerModel.topImgs[i])
+                              image: NetworkImage(this.topBennerModel.topImgs[i])
                             )
                           ),
                         )

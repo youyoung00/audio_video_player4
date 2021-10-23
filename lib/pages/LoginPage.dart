@@ -63,12 +63,19 @@ class _LoginPageState extends State<LoginPage> {
                   height: size.height*0.04,
                   //color: Colors.red,
                 ),
-                Text(
-                  "Password Hints Are Anniversary.",
-                  style: TextStyle(
-                    color: Colors.grey.shade600
+
+                  Text(
+                    "Password Hints Are Anniversary.",
+                    style: TextStyle(
+                      color: Colors.grey.shade600
+                    ),
                   ),
-                ),
+                // Text(
+                //   "Password Hints Are Anniversary.",
+                //   style: TextStyle(
+                //     color: Colors.grey.shade600
+                //   ),
+                // ),
                 Container(
                   height: size.height*0.05,
                 )
